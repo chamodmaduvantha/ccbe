@@ -16,19 +16,19 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item mr-3">
-          <v-btn rounded="xl" size="large" color="#FBB700" to="/">Home</v-btn>
+          <v-btn rounded="xl" size="large" color="#FBB700" to="/" block>Home</v-btn>
         </li>
         <li class="nav-item mr-3">
-          <v-btn rounded="xl" size="large" color="#FBB700" to="/courses">Courses</v-btn>
+          <v-btn rounded="xl" size="large" color="#FBB700" to="/courses" block>Courses</v-btn>
         </li>
         <li class="nav-item mr-3">
-          <v-btn rounded="xl" size="large" color="#FBB700" to="/inquiry">Inquiry</v-btn>
+          <v-btn rounded="xl" size="large" color="#FBB700" to="/inquiry" block>Inquiry</v-btn>
         </li>
         <li class="nav-item mr-3">
-          <v-btn rounded="xl" size="large" color="#FBB700" to="/about">About Us</v-btn>
+          <v-btn rounded="xl" size="large" color="#FBB700" to="/about" block>About Us</v-btn>
         </li>
-        <li class="nav-item">
-          <v-btn rounded="xl" size="large" color="#FBB700" to="/contact">Contact</v-btn>
+        <li class="nav-item mr-3">
+          <v-btn rounded="xl" size="large" color="#FBB700" to="/contact" block>Contact</v-btn>
         </li>
       </ul>
     </div>
