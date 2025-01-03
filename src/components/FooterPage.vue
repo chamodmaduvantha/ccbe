@@ -5,7 +5,7 @@
                 <strong class="title-footer">Shaping the Future of Education</strong>
             </div>
             <div class="mt-2">
-                <strong class="Contact">Hot Line : 0912252452 | Email : mail@ccbe.lk </strong>
+                <strong class="Contact">Hot Line : 071 3 999 666 | Email : info@ccbe.lk </strong>
             </div>
             <div>
                 <v-btn v-for="icon in icons" :key="icon.name" class="mx-4" variant="text" @click="navigate(icon.link)">
