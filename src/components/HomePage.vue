@@ -8,7 +8,7 @@
       <img :src="logo" alt="Company Logo" width="120" height="120" id="logo" />
     </div>
     <h1 class="title-intro mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #010227;">
-      Welcome to the Cambridge College of British English
+      Welcome to the Cambridge ollege of British English
     </h1>
     <br />
     <p class="paragraph" data-aos="fade-up" data-aos-duration="3000">
