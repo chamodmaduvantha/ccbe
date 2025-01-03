@@ -7,7 +7,7 @@
     <div class="logo-container mt-2" data-aos="zoom-in-up" data-aos-duration="3000">
       <img :src="logo" alt="Company Logo" width="120" height="120" id="logo" />
     </div>
-    <h1 class="title-intro mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #010227;">
+    <h1 class="title-intro mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #5E0000;">
       Welcome to the Cambridge College of British English
     </h1>
     <br />
@@ -26,8 +26,9 @@
     </p>
     <br />
 
-    <section class="why-choose-us" ref="statsSection" style="background-color: #348888 !important;">
-      <h1 class="title-intro mt-5" style="color: #010227" data-aos="fade-up" data-aos-duration="3000">Why Choose Us</h1>
+    <v-divider></v-divider>
+    <section class="why-choose-us" ref="statsSection" style="background-color: #5E0000 !important;">
+      <h1 class="title-intro mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">Why Choose Us</h1>
       <v-container>
         <v-row justify="center" align="center" class="stats-row">
           <v-col cols="12" sm="6" md="3" class="text-center">
