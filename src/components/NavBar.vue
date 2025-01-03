@@ -25,7 +25,7 @@
           <v-btn rounded="xl" size="large" color="#FBB700" to="/inquiry" block>Inquiry</v-btn>
         </li>
         <li class="nav-item mr-3">
-          <v-btn rounded="xl" size="large" color="#FBB700" to="" block>About Us</v-btn>
+          <v-btn rounded="xl" size="large" color="#FBB700" to="/about" block>About Us</v-btn>
         </li>
         <li class="nav-item mr-3">
           <v-btn rounded="xl" size="large" color="#FBB700" to="/contact" block>Contact</v-btn>
