@@ -4,8 +4,7 @@
         <div class="logo-container mt-3" data-aos="zoom-in-up" data-aos-duration="2000">
             <img :src="logo" alt="Company Logo" width="150" height="150" id="logo">
         </div>
-        <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
-            ABOUT <span class="highlight">CCBE</span>
+        <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">ABOUT <span class="highlight">CCBE</span>
         </h1>
         <br>
         <div class="center-container">
@@ -60,7 +59,7 @@
                 </v-col>
             </v-row>
         </div>
-        <div class="center-container">
+        <div class="justify-container">
             <v-row class="mt-4">
                 <v-col cols="12">
                     <p class="paragraph mt-3" data-aos="fade-up" data-aos-duration="3000"><b>Our Vision </b>is to lead
@@ -72,12 +71,13 @@
             </v-row>
         </div>
 
-
+        <v-divider></v-divider>
         <!-- Existing content -->
 
-        <h1 class="title-intro mt-5" data-aos="fade-up" data-aos-duration="3000">
-            Our Gallery
-        </h1>
+        <div class="center-container">
+            <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">OUR <span class="highlight">BRANCH
+                    NETWORK</span></h1>
+        </div>
         <v-row justify="center" class="mt-5">
             <v-col cols="12" sm="6" md="4" v-for="(photo, index) in photos" :key="index">
                 <v-card class="gallery-card" data-aos="zoom-in" data-aos-duration="2000">
@@ -87,6 +87,21 @@
             </v-col>
         </v-row>
 
+        <div class="center-container">
+            <v-img data-aos="zoom-out" data-aos-duration="2000" width="300" height="400" src="@/assets/Branch_Network.png" align="center"></v-img>
+        </div>
+        <div v-if="selectedOffice" class="text-center mt-5">
+            <h3>{{ selectedOffice.name }}</h3>
+            <p>{{ selectedOffice.address }}</p>
+            <p>{{ selectedOffice.phone }}</p>
+        </div>
+        <div>
+            <v-row justify="center" class="my-3">
+                <v-btn data-aos="zoom-out" data-aos-duration="2000" rounded="xl" size="large" class="ml-1 mr-1 mb-1" color="#FBB700" v-for="(office, index) in offices" :key="index" outlined @click="selectOffice(office)">
+                    {{ office.name }}
+                </v-btn>
+            </v-row>
+        </div>
 
     </v-container>
 
@@ -110,13 +125,24 @@ export default {
     mounted() {
         AOS.init(); // Initialize AOS when the component is mounted
     },
+    methods: {
+        selectOffice(office) {
+            this.selectedOffice = office;
+        },
+    },
     data() {
         return {
 
             logo: require('@/assets/Logo.png'),
-            photos: [
-
-            ]
+            offices: [
+                { name: "Galle Office", address: "118, Old Matara Rd, Galle, 80000", phone: "+94 91 22 37373" },
+                { name: "Ambalangoda Office", address: "No 97, New Rd, Ambalangoda, 80300", phone: "+94 91 2252 452" },
+                { name: "Matara Office", address: "No 352, Kumarathunga Mw, Matara, 81000", phone: "+94 41 2050 200" },
+                { name: "Piliyandala Office", address: "No Moratuwa Rd, Suwarapola, Piliyandala, 10300", phone: "+94 11 2 180 008" },
+                { name: "Horana Office", address: "No 149, Graceland Circular Rd, Horana, 12400", phone: "+94 2 180 008" },
+                // Add more offices here...
+            ],
+            selectedOffice: null,
         }
     },
 
@@ -186,7 +212,7 @@ li {
 
 .center-container {
     display: flex;
-    justify-content: left;
+    justify-content: center;
     align-items: left;
     display: flex;
 }
