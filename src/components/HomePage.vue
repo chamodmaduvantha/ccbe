@@ -7,8 +7,8 @@
     <div class="logo-container mt-2" data-aos="zoom-in-up" data-aos-duration="3000">
       <img :src="logo" alt="Company Logo" width="120" height="120" id="logo" />
     </div>
-    <h1 class="title-intro mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #5E0000;">
-      Welcome to the Cambridge College of British English
+    <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
+      Welcome to the <span class="highlight">Cambridge College of British English</span>
     </h1>
     <br />
     <p class="paragraph" data-aos="fade-up" data-aos-duration="3000">
@@ -28,7 +28,7 @@
 
     <v-divider></v-divider>
     <section class="why-choose-us" ref="statsSection" style="background-color: #5E0000 !important;">
-      <h1 class="title-intro mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">Why Choose Us</h1>
+      <h2 class="title mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">Why Choose Us</h2>
       <v-container>
         <v-row justify="center" align="center" class="stats-row">
           <v-col cols="12" sm="6" md="3" class="text-center">
@@ -64,8 +64,10 @@
     </section>
     <br>
 
+    <v-divider></v-divider>
+    <br>
     <!-- News Feed Section -->
-    <h1 class="title-intro mt-5" data-aos="fade-up" data-aos-duration="3000">News Feed</h1>
+    <h2 class="title mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #5E0000;">News Feed</h2>
     <v-row class="text-center mt-5" justify="center">
       <v-col v-for="(item, i) in items" :key="i" cols="12" sm="6" md="4" class="d-flex justify-center">
         <v-card class="mx-auto" max-width="400" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
@@ -81,9 +83,12 @@
     </v-row>
     <br>
 
-    <h1 class="title-intro mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #010227;">
-      Testimonials
-    </h1>
+    <v-divider></v-divider>
+
+    <br>
+    <h2 class="title mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #5E0000;" >
+      TESTIMONIALS
+    </h2>
     <v-container>
       <v-row class="text-center mt-5" justify="center">
         <v-col v-for="(testimonial, index) in testimonials" :key="index" cols="12" sm="6" md="4"
@@ -102,6 +107,22 @@
       </v-row>
     </v-container>
     <br />
+
+    <v-divider></v-divider>
+
+    <section class="industry-professionals">
+    <h2 class="title" data-aos="fade-up" data-aos-duration="3000">INDUSTRY <span class="highlight">PROFESSIONALS</span></h2>
+    <p class="subtitle">
+      The courses are a collaborative effort between Cambridge College of British English and industry professionals.
+    </p>
+    <v-row class="professionals-grid" justify="space-around" data-aos="fade-up" data-aos-duration="3000">
+      <v-col v-for="professional in professionals" :key="professional.name" class="text-center" cols="12" sm="6" md="4" lg="3">
+        <img :src="professional.image" :alt="professional.name" class="profile-pic">
+        <h4 class="name">{{ professional.name }}</h4>
+        <p class="position">{{ professional.position }}</p>
+      </v-col>
+    </v-row>
+  </section>
 
   </v-container>
 
@@ -169,6 +190,63 @@ export default {
           image: require('@/assets/cards/33.jpg'),
         },
       ],
+      professionals: [
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+        {
+          name: 'Dr. Sugeeth Patabendige',
+          position: 'Chief Programme Architect',
+          image: require('@/assets/cards/Teacher.jpg'),
+        },
+      ],
       logo: require('@/assets/Logo.png'),
     };
   },
@@ -217,8 +295,51 @@ export default {
 </script>
 
 <style>
+.industry-professionals {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #5E0000;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 20px 0;
+}
+
+.professionals-grid {
+  margin-top: 30px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 3px solid #5E0000;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.position {
+  font-size: 0.9rem;
+  color: #777;
+}
 .title-intro {
-  font-family: "Anton", sans-serif;
+  font-family: "Arial", sans-serif;
   font-weight: 400;
   font-style: normal;
   text-align: center;
