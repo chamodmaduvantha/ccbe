@@ -22,6 +22,9 @@
           <v-btn rounded="xl" size="large" color="#FBB700" to="/courses" block>Courses</v-btn>
         </li>
         <li class="nav-item mr-3">
+          <v-btn rounded="xl" size="large" color="#FBB700" to="/corevalues" block>Core Values</v-btn>
+        </li>
+        <li class="nav-item mr-3">
           <v-btn rounded="xl" size="large" color="#FBB700" to="/inquiry" block>Inquiry</v-btn>
         </li>
         <li class="nav-item mr-3">
