@@ -8,6 +8,9 @@ const AboutUs = () => import('../components/AboutUs.vue');
 const CoursePage = () => import('../components/CoursePage.vue');
 const CoreValuesPage = () => import('../components/CoreValuesPage.vue');
 
+//Cources
+const PreschoolPage = () => import('../components/courses/PreschoolPage.vue');
+
 
 const routes = [
   {
@@ -23,13 +26,18 @@ const routes = [
   {
     path: '/courses',
     name: 'CoursePage',
-    component: CoursePage
+    component: CoursePage,
   },
   {
     path: '/corevalues',
     name: 'CoreValuesPage',
-    component: CoreValuesPage
+    component: CoreValuesPage,
   },
+  {
+    path: '/courses/preschool',
+    name: 'PreschoolPage',
+    component: PreschoolPage,
+  }
 
 ];
 
