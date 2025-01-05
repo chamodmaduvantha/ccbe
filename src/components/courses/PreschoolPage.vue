@@ -64,40 +64,46 @@
         <v-divider></v-divider>
 
         <section class="why-choose-us" ref="statsSection" style="background-color: #5E0000 !important;">
-            <h2 class="title mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">Course Details</h2>
+            <h2 class="title mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">Course Details
+            </h2>
             <v-container>
                 <v-row justify="center" align="center" class="stats-row">
                     <v-col cols="12" sm="6" md="3" class="text-center">
-                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
+                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
-                                <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/timer.gif" max-width="100"
-                                    height="100"></v-img>
+                                <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/timer.gif"
+                                    max-width="100" height="100"></v-img>
                             </v-row>
                             <h5 class="mt-2"><b>Course Duration</b></h5>
                             <p>Contact us to find out</p>
                         </v-card>
                     </v-col>
                     <v-col cols="12" sm="6" md="3" class="text-center">
-                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
+                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
-                                <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/calender.gif" max-width="100"
-                                    height="100"></v-img>
+                                <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/calender.gif"
+                                    max-width="100" height="100"></v-img>
                             </v-row>
                             <h5 class="mt-2"><b>Class Duration</b></h5>
                             <p>Contact us to find out</p>
                         </v-card>
                     </v-col>
                     <v-col cols="12" sm="6" md="3" class="text-center">
-                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
+                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
-                                <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/fee.gif" max-width="100" height="100"></v-img>
+                                <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/fee.gif" max-width="100"
+                                    height="100"></v-img>
                             </v-row>
                             <h5 class="mt-2"><b>Course Fee</b></h5>
                             <p>Contact us to find out</p>
                         </v-card>
                     </v-col>
                     <v-col cols="12" sm="6" md="3" class="text-center">
-                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
+                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
+                            data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
                                 <h1 class="mt-5"><b>Age</b></h1>
                             </v-row>
@@ -114,6 +120,19 @@
         </section>
 
 
+        <v-row justify="center" align="center" class="my-5">
+            <v-btn rounded="xl" size="large" color="#FBB700" class="custom-btn" elevation="10" to="">
+                <v-icon left>mdi-phone</v-icon>
+                Contact Us
+            </v-btn>   
+        </v-row>
+
+        <v-row justify="center" align="center" class="my-5">
+            <h1 style="color: red;">IMPORTANT</h1>
+        </v-row>
+        <v-row justify="center" class="my-5">
+            <h5 style="text-align: center;">Before enroling, All children Will take a Placement Test to determine which course is best-suited to their level of English language proficiency.</h5>
+        </v-row>
     </v-container>
 
     <FooterPage></FooterPage>
@@ -212,4 +231,20 @@ li {
     align-items: left;
     display: flex;
 }
+.custom-btn {
+  font-size: 18px; /* Adjust font size for readability */
+  font-weight: bold; /* Make the text bold */
+  text-transform: uppercase; /* Make the text uppercase */
+  padding: 10px 20px; /* Add some padding */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  background-color: #FBB700; /* Button background color */
+  color: white; /* Text color */
+}
+
+.custom-btn:hover {
+  background-color: #FFCC00; /* Slightly lighter shade on hover */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
 </style>
