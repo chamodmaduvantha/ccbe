@@ -5,7 +5,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 // Import your components
 const HomePage = () => import('../components/HomePage.vue');
 const AboutUs = () => import('../components/AboutUs.vue');
-const Documentations = () => import('../components/OurDocumentations.vue');
+const CoursePage = () => import('../components/CoursePage.vue');
 const CoreValuesPage = () => import('../components/CoreValuesPage.vue');
 
 
@@ -21,9 +21,9 @@ const routes = [
     component: AboutUs
   },
   {
-    path: '/documentations',
-    name: 'Documentations',
-    component: Documentations
+    path: '/courses',
+    name: 'CoursePage',
+    component: CoursePage
   },
   {
     path: '/corevalues',

@@ -11,7 +11,7 @@
       Welcome to the <span class="highlight">Cambridge College of British English</span>
     </h1>
     <br />
-    <p class="paragraph" data-aos="fade-up" data-aos-duration="3000">
+    <p class="paragraph" data-aos="fade-up" data-aos-duration="3000" style="text-align: center;">
       <b>Cambridge College of British English (CCBE)</b> is renowned for its commitment to providing world-class English
       courses tailored to individuals of all ages, from 5-year-old children to adults. With a dedicated mission to
       foster proficiency in reading, writing, listening, and speaking English, CCBE stands as a beacon of excellence in
@@ -21,7 +21,7 @@
       goals.
     </p>
     <br />
-    <p class="paragraph" data-aos="fade-up" data-aos-duration="3000">
+    <p class="paragraph" data-aos="fade-up" data-aos-duration="3000" style="text-align: center;">
       <b>Join CCBE and unlock your potential for academic success!</b>
     </p>
     <br />
@@ -363,7 +363,6 @@ export default {
   align-items: center;
   margin-top: 20px;
 }
-
 .horizontal-scroll {
   display: flex;
   overflow-x: auto;
