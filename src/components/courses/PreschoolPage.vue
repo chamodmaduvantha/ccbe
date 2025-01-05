@@ -121,7 +121,7 @@
 
 
         <v-row justify="center" align="center" class="my-5">
-            <v-btn rounded="xl" size="large" color="#FBB700" class="custom-btn" elevation="10" to="">
+            <v-btn rounded="xl" size="large" color="#FBB700" class="custom-btn-contact" elevation="10" to="">
                 <v-icon left>mdi-phone</v-icon>
                 Contact Us
             </v-btn>   
@@ -231,7 +231,7 @@ li {
     align-items: left;
     display: flex;
 }
-.custom-btn {
+.custom-btn-contact {
   font-size: 18px; /* Adjust font size for readability */
   font-weight: bold; /* Make the text bold */
   text-transform: uppercase; /* Make the text uppercase */
@@ -241,7 +241,7 @@ li {
   color: white; /* Text color */
 }
 
-.custom-btn:hover {
+.custom-btn-contact:hover {
   background-color: #FFCC00; /* Slightly lighter shade on hover */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
   transform: scale(1.05); /* Slight zoom effect on hover */
