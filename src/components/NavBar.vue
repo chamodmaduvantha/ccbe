@@ -5,7 +5,7 @@
         <a class="navbar-brand" href="#">
           <img :src="logoPath" alt="Company Logo" width="70" height="70" class="d-inline-block align-top ml-3 mt-2 mr-1">
         </a>
-        <h2 class="text-white ml-3 mt-2" style="font-family: Arial, sans-serif; font-weight: bold; color: #5E0000 !important;" >CCBE</h2>
+        <h2 class="text-white ml-3 mt-2" style="font-family: Arial, sans-serif; font-weight: bold; color: #5E0000 !important;" >C</h2>
       </div>
       
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
