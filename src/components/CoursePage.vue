@@ -6,8 +6,8 @@
         </h1>
         <br>
 
-        <v-timeline>
-            <v-timeline-item dot-color="purple-lighten-2" fill-dot>
+        <v-timeline align="start" side="end">
+            <v-timeline-item dot-color="pink" size="small">
                 <v-card color="teal-darken-4" max-width="450">
                     <div class="d-flex flex-no-wrap justify-space-between">
                         <div>
@@ -26,7 +26,7 @@
                     </div>
                 </v-card>
             </v-timeline-item>
-            <v-timeline-item dot-color="amber-lighten-1" size="x-small" fill-dot>
+            <v-timeline-item dot-color="pink" size="small">
                 <v-card color="teal-darken-4" max-width="450">
                     <div class="d-flex flex-no-wrap justify-space-between">
                         <div>
@@ -45,18 +45,7 @@
                     </div>
                 </v-card>
             </v-timeline-item>
-        </v-timeline>
-        <v-row>
-
-            <v-col cols="12" sm="1" md="6">
-
-            </v-col>
-
-            <v-col cols="12" sm="1" md="6">
-                
-            </v-col>
-
-            <v-col cols="12" sm="1" md="6">
+            <v-timeline-item dot-color="pink" size="small">
                 <v-card color="teal-darken-4" max-width="450">
                     <div class="d-flex flex-no-wrap justify-space-between">
                         <div>
@@ -74,8 +63,8 @@
                         </v-avatar>
                     </div>
                 </v-card>
-            </v-col>
-            <v-col cols="12" sm="1" md="6">
+            </v-timeline-item>
+            <v-timeline-item dot-color="pink" size="small">
                 <v-card color="teal-darken-4" max-width="450">
                     <div class="d-flex flex-no-wrap justify-space-between">
                         <div>
@@ -92,9 +81,8 @@
                         </v-avatar>
                     </div>
                 </v-card>
-            </v-col>
-
-            <v-col cols="12" sm="1" md="6">
+            </v-timeline-item>
+            <v-timeline-item dot-color="pink" size="small">
                 <v-card color="teal-darken-4" max-width="450">
                     <div class="d-flex flex-no-wrap justify-space-between">
                         <div>
@@ -112,8 +100,8 @@
                         </v-avatar>
                     </div>
                 </v-card>
-            </v-col>
-            <v-col cols="12" sm="1" md="6">
+            </v-timeline-item>
+            <v-timeline-item dot-color="pink" size="small">
                 <v-card color="teal-darken-4" max-width="450">
                     <div class="d-flex flex-no-wrap justify-space-between">
                         <div>
@@ -131,6 +119,30 @@
                         </v-avatar>
                     </div>
                 </v-card>
+            </v-timeline-item>
+        </v-timeline>
+        <v-row>
+
+            <v-col cols="12" sm="1" md="6">
+                
+            </v-col>
+
+            <v-col cols="12" sm="1" md="6">
+                
+            </v-col>
+
+            <v-col cols="12" sm="1" md="6">
+                
+            </v-col>
+            <v-col cols="12" sm="1" md="6">
+                
+            </v-col>
+
+            <v-col cols="12" sm="1" md="6">
+                
+            </v-col>
+            <v-col cols="12" sm="1" md="6">
+                
             </v-col>
         </v-row>
 
