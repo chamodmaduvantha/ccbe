@@ -34,7 +34,7 @@ const routes = [
     component: CoreValuesPage,
   },
   {
-    path: '/courses/preschool',
+    path: '/preschool',
     name: 'PreschoolPage',
     component: PreschoolPage,
   }

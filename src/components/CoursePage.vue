@@ -17,7 +17,7 @@
                         <div>This program is for children who know their ABCs and are just starting to read or have some familiarity with English.</div>
                     </v-card-text>
                     <v-card-actions>
-                        <v-btn class="custom-btn mt-3" variant="outlined" color="teal-darken-4" :href="`/courses/preschool`">Learn More -></v-btn>
+                        <v-btn class="custom-btn mt-3" variant="outlined" color="teal-darken-4" :href="`/preschool`">Learn More -></v-btn>
                     </v-card-actions>
                 </v-card>
             </v-col>
