@@ -135,11 +135,11 @@ export default {
 
             logo: require('@/assets/Logo.png'),
             offices: [
-                { name: "Galle Collage", address: "118, Old Matara Rd, Galle, 80000", phone: "+94 91 22 37373" },
-                { name: "Ambalangoda Collage", address: "No 97, New Rd, Ambalangoda, 80300", phone: "+94 91 2252 452" },
-                { name: "Matara Collage", address: "No 352, Kumarathunga Mw, Matara, 81000", phone: "+94 41 2050 200" },
-                { name: "Piliyandala Collage", address: "No Moratuwa Rd, Suwarapola, Piliyandala, 10300", phone: "+94 11 2 180 008" },
-                { name: "Horana Collage", address: "No 149, Graceland Circular Rd, Horana, 12400", phone: "+94 2 180 008" },
+                { name: "Galle College", address: "118, Old Matara Rd, Galle, 80000", phone: "+94 91 22 37373" },
+                { name: "Ambalangoda College", address: "No 97, New Rd, Ambalangoda, 80300", phone: "+94 91 2252 452" },
+                { name: "Matara College", address: "No 352, Kumarathunga Mw, Matara, 81000", phone: "+94 41 2050 200" },
+                { name: "Piliyandala College", address: "No Moratuwa Rd, Suwarapola, Piliyandala, 10300", phone: "+94 11 2 180 008" },
+                { name: "Horana College", address: "No 149, Graceland Circular Rd, Horana, 12400", phone: "+94 2 180 008" },
             ],
             selectedOffice: null,
         }
