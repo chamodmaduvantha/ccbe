@@ -10,7 +10,7 @@ const CoreValuesPage = () => import('../components/CoreValuesPage.vue');
 
 //Cources
 const PreschoolPage = () => import('../components/courses/PreschoolPage.vue');
-
+const YoungLearnersPage = () => import('../components/courses/YoungLearnersPage.vue');
 
 const routes = [
   {
@@ -37,6 +37,11 @@ const routes = [
     path: '/courses/preschool',
     name: 'PreschoolPage',
     component: PreschoolPage,
+  },
+  {
+    path: '/course/younglearners',
+    name: 'YoungLearnersPage',
+    component: YoungLearnersPage,
   }
 
 ];
