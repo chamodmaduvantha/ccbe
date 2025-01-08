@@ -128,7 +128,7 @@
         <v-row justify="center" align="center">
             <v-timeline side="end">
                 <v-timeline-item dot-color="#FF5722" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Beginner Level (Starters)" color="#FF5722" elevation="10" width="700" data-aos="fade-left" data-aos-duration="1500">
+                    <v-card class="mx-auto hover-card" subtitle="" title="Beginner Level (Starters)" color="#FF5722" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="1500">
                         <v-card-text>
                             In the beginner level, children will be able to:
                             <ul class="bullet-list">
@@ -140,7 +140,7 @@
                     </v-card>
                 </v-timeline-item>
                 <v-timeline-item dot-color="#FF9800" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Intermediate Level (Movers)" color="#FF9800" elevation="10" width="700" data-aos="fade-left" data-aos-duration="2000">
+                    <v-card class="mx-auto hover-card" subtitle="" title="Intermediate Level (Movers)" color="#FF9800" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="2000">
                         <v-card-text>
                             In the intermediate level, children will be able to:
                             <ul class="bullet-list">
@@ -152,7 +152,7 @@
                     </v-card>
                 </v-timeline-item>
                 <v-timeline-item dot-color="#4CAF50" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Higher Level (Flyers)" color="#4CAF50" elevation="10" width="700" data-aos="fade-left" data-aos-duration="2500">
+                    <v-card class="mx-auto hover-card" subtitle="" title="Higher Level (Flyers)" color="#4CAF50" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="2500">
                         <v-card-text>
                             In the higher levels, children will be able to:
                             <ul class="bullet-list">
