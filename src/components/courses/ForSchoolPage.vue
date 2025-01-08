@@ -55,7 +55,7 @@
     </div>
 
     <br />
-    
+
     <v-divider></v-divider>
 
     <section class="why-choose-us" ref="statsSection" style="background-color: #5E0000 !important;">
@@ -109,7 +109,7 @@
                             <h5 class="mt-2"><b>Age Group</b></h5>
                         </v-row>
                         <v-row justify="center" align="center">
-                            <p>06 - 12 Years</p>
+                            <p>13 - 18 Years</p>
                         </v-row>
                     </v-card>
                 </v-col>
@@ -123,66 +123,93 @@
         Programme Levels
     </h1>
     <br />
-    <div class="center-container">
-        <v-row justify="center" align="center">
-            <v-timeline side="end">
-                <v-timeline-item dot-color="#FF5722" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Beginner Level (Starters)" color="#FF5722" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="1500">
-                        <v-card-text>
-                            In the beginner level, children will be able to:
-                            <ul class="bullet-list">
-                                <li>Read and write simple sentences</li>
-                                <li>Spell simple words</li>
-                                <li>Understand short conversations</li>
-                            </ul>
-                        </v-card-text>
-                    </v-card>
-                </v-timeline-item>
-                <v-timeline-item dot-color="#FF9800" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Intermediate Level (Movers)" color="#FF9800" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="2000">
-                        <v-card-text>
-                            In the intermediate level, children will be able to:
-                            <ul class="bullet-list">
-                                <li>Understand simple English stories</li>
-                                <li>Write and understand simple sentences</li>
-                                <li>Answer basic questions using correct expressions</li>
-                            </ul>
-                        </v-card-text>
-                    </v-card>
-                </v-timeline-item>
-                <v-timeline-item dot-color="#4CAF50" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Higher Level (Flyers)" color="#4CAF50" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="2500">
-                        <v-card-text>
-                            In the higher levels, children will be able to:
-                            <ul class="bullet-list">
-                                <li>Understand longer texts about everyday topics</li>
-                                <li>Write short stories and short messages</li>
-                                <li>Tell a story using their own ideas</li>
-                            </ul>
-                        </v-card-text>
-                    </v-card>
-                </v-timeline-item>
-            </v-timeline>
-        </v-row>
-    </div>
+    <v-row>
+        <v-col cols="12">
+            <v-card class="mx-auto hover-card" subtitle="" title="Elementary Level (A2 Key)" color="#FBB700" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="1500">
+                <v-card-text>
+                    <b>This course is for beginners with basic English skills who are able to communicate in simple situations and is designed to prepare learners for the A2 KEY exam.By the end of this course,</b>
+                    <br><br>
+                    students will be able to:
+                    <ul class="bullet-list">
+                        <li>Understand straightforward information and begin to express oneself in familiar topics</li>
+                        <li>Understand basic sentences about relevant topics: family, shopping, local geography, etc.</li>
+                        <li>Communicate regarding simple and routine tasks.</li>
+                        <li>Describe in simple terms his/her background, environment and immediate needs.</li>
+                    </ul>
+                </v-card-text>
+            </v-card>
+        </v-col>
+        <v-col cols="12">
+            <v-card class="mx-auto hover-card" subtitle="" title="Pre-Intermediate Level (B1 Preliminary)" color="#FF9800" elevation="10" width="auto" data-aos="fade-right" data-aos-duration="2000">
+                <v-card-text>
+                    <b>This course is for learners who have fully mastered basic English and have practical language skills for everyday use. By the end of this course, learners will be taking the B1 Preliminary exam.</b>
+                    <br><br>
+                    By the end of this course, students will be able to:
+                    <ul class="bullet-list">
+                        <li>Express oneself in a simple and general way in familiar situations.</li>
+                        <li>Understand the main points of familiar matters (e.g. school, family, leisure).</li>
+                        <li>Deal with most situations related to travelling in English speaking countries.</li>
+                        <li>Describe experiences and events, dreams, hopes & ambitions with explanations.</li>
+                    </ul>
+                </v-card-text>
+            </v-card>
+        </v-col>
+        <v-col cols="12">
+            <v-card class="mx-auto hover-card" subtitle="" title="Upper-Intermediate Level (B2 First)" color="#4CAF50" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="2500">
+                <v-card-text>
+                    <b>This course is for learners who know how to use English in a variety of situations in the real world and are able to take a course of study in English. This level effectively prepares them for the B2 First exam.</b>
+                    <br><br>
+                    By the end of this course, students will be able to:
+                    <ul class="bullet-list">
+                        <li>Understand the main ideas of complex texts on concrete and abstract concepts</li>
+                        <li>Interact and socialise with native English speakers smoothly</li>
+                        <li>Produce clear, detailed texts on a wide range of subjects</li>
+                    </ul>
+                </v-card-text>
+            </v-card>
+        </v-col>
+        <v-col cols="12">
+            <v-card class="mx-auto hover-card" subtitle="" title="Advanced Level (C1 Advanced)" color="#2196F3" elevation="10" width="auto" data-aos="fade-right" data-aos-duration="3000">
+                <v-card-text>
+                    <b>This course is for learners who wish to use English for professional or higher education study purposes. By the end of this course, learners can take the C1 Advanced exam that meets the English language entrance requirements for many colleges, universities and companies worldwide.</b>
+                    <br><br>
+                    By the end of this course, students will be able to:
+                    <ul class="bullet-list">
+                        <li>Understand a wide range of demanding and lengthy texts</li>
+                        <li>Recognise meanings that are not straightforward</li>
+                        <li>Express himself/herself spontaneously and fluently</li>
+                        <li>Use language flexibly for social, academic or professional purposes</li>
+                    </ul>
+                </v-card-text>
+            </v-card>
+        </v-col>
+        <v-col cols="12">
+            <v-card class="mx-auto hover-card" subtitle="" title="Proficient Level (C2 Proficiency)" color="#E91E63" elevation="10" width="auto" data-aos="fade-left" data-aos-duration="3000">
+                <v-card-text>
+                    <b>This course is designed to prepare students for the final level of the Cambridge English exams, C2 Proficiency, where learners will reach the highest level of English proficiency. Universities and colleges throughout the world accept C2 Proficiency as a suitable English language entry requirement to courses of higher education or post-graduate study. It is also internationally recognised by many companies as an indication of a high level of competence in English. At this level, learners are approaching a standard of English similar to that of an educated native speaker.</b>
+                    <br><br>
+                    By the end of this course, students will be able to:
+                    <ul class="bullet-list">
+                        <li>Understand virtually everything heard or read with ease</li>
+                        <li>Read, write, understand and speak at native English speakers’ level</li>
+                        <li>Express himself/herself spontaneously and fluently</li>
+                    </ul>
+                </v-card-text>
+            </v-card>
+        </v-col>
+        
+    </v-row>
+
     <br />
     <v-divider></v-divider>
 
     <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
-        Young Learners English (YLE) Exams
+        Learners Exams
     </h1>
     <br />
     <div class="center-container">
         <v-row>
             <v-col cols="12" sm="6" class="mt-2">
-                <v-img data-aos="zoom-out" data-aos-duration="2000" src="@/assets/course/exam.jpg" align="center" elevation="23"></v-img>
-            </v-col>
-            <v-col cols="12" sm="6">
-                <p class="paragraph" data-aos="fade-up" data-aos-duration="3000">
-                    The Young Learners English (YLE) exams serve as a valuable assessment tool for young language learners, offering a comprehensive evaluation of their English proficiency. Tailored specifically for children, these exams provide a supportive and engaging environment where students can demonstrate their language skills with confidence.
-
-                    Divided into three levels—Pre A1 Starters, A1 Movers and A2 Flyers—the YLE exams cover a range of language competencies, including listening, speaking, reading, and writing.
-                </p>
             </v-col>
         </v-row>
     </div>
@@ -206,7 +233,7 @@
     </v-row>
     <v-row justify="center" class="my-5">
         <h5 style="text-align: center;">
-            Before enrolling, all children will take a Placement Test to determine which course is best-suited to their level of English language proficiency.
+            Before enroling, All children Will take a Placement Test to determine which course is best-suited to their level of English language proficiency.
         </h5>
     </v-row>
 </v-container>
@@ -234,6 +261,7 @@ export default {
     data() {
         return {
             logo: require('@/assets/Logo.png'),
+            reveal: false,
         }
     },
 }
