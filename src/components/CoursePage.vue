@@ -47,7 +47,7 @@
                         <div>Want to customize Elementor image box height? Here we have the Solution!</div>
                     </v-card-text>
                     <v-card-actions>
-                        <v-btn class="custom-btn mt-3" variant="outlined" color="teal-darken-4">Learn More -></v-btn>
+                        <v-btn class="custom-btn mt-3" variant="outlined" color="teal-darken-4" to="/course/forschool">Learn More -></v-btn>
                     </v-card-actions>
                 </v-card>
             </v-col>
