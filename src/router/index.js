@@ -14,6 +14,7 @@ const YoungLearnersPage = () => import('../components/courses/YoungLearnersPage.
 const ForSchoolPage = () => import('../components/courses/ForSchoolPage.vue');
 const EnglishskillsforOLPage = () => import('../components/courses/EnglishskillsforOLPage.vue');
 const EnglishskillsforALPage = () => import('../components/courses/EnglishskillsforALPage.vue');
+const IELTSPage = () => import('../components/courses/IELTSPage.vue');
 
 const routes = [
   {
@@ -60,6 +61,11 @@ const routes = [
     path: '/course/al',
     name: 'EnglishskillsforALPage',
     component: EnglishskillsforALPage,
+  },
+  {
+    path: '/course/ielts',
+    name: 'IELTSPage',
+    component: IELTSPage,
   },
 
 ];
