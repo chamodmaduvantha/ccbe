@@ -11,10 +11,10 @@
     <br />
     <div class="center-container">
         <v-row>
-            <v-col cols="12" sm="6" class="mt-1">
+            <v-col cols="12" class="mt-1">
                 <v-img data-aos="zoom-out" data-aos-duration="2000" src="@/assets/course/PS1.jpg" align="center" elevation="23"></v-img>
             </v-col>
-            <v-col cols="12" sm="6">
+            <v-col cols="12">
                 <p class="paragraph" data-aos="fade-up" data-aos-duration="3000">
                     This programme is suitable for secondary school students and provides better academic, social and career opportunities through English mastery. We provide learners with a friendly learning space where they can improve their language abilities through the four core skills of reading, writing, speaking and listening. This programme teaches learners to discover their own voices to communicate effortlessly.
 
@@ -197,7 +197,7 @@
                 </v-card-text>
             </v-card>
         </v-col>
-        
+
     </v-row>
 
     <br />
@@ -207,12 +207,132 @@
         Learners Exams
     </h1>
     <br />
-    <div class="center-container">
-        <v-row>
-            <v-col cols="12" sm="6" class="mt-2">
-            </v-col>
-        </v-row>
+    <div>
+
+        <v-expansion-panels class="my-4" variant="popout">
+            <v-expansion-panel>
+                <template #title>
+                    <span style="font-size: medium;"><b>A2 Key Exam</b></span>
+                </template>
+                <template #text>
+                    <div>
+                        <p>The A2 Key examination is an elementary-level exam that tests learner ability to deal with basic written and spoken communications in simple situations.</p>
+                        <p>An A2 certificate demonstrates that the learner can:</p>
+                        <ul>
+                            <li>Understand and use basic phrases and expressions</li>
+                            <li>Understand basic written English</li>
+                            <li>Communicate with English speakers at a basic level</li>
+                        </ul>
+                        <p>A2 Key has 3 components:</p>
+                        <ul>
+                            <li>Reading and Writing (60 Minutes)</li>
+                            <li>Listening (30 Minutes)</li>
+                            <li>Speaking(8-10 Minutes)</li>
+                        </ul>
+                        <p>Each component contributes to a profile which defines the candidate’s overall communicative language ability at this level.</p>
+                    </div>
+                </template>
+            </v-expansion-panel>
+            <v-expansion-panel>
+                <template #title>
+                    <span style="font-size: medium;"><b>B1 Preliminary Exam</b></span>
+                </template>
+                <template #text>
+                    <div>
+                        <p>The B1 Preliminary examination is for candidates who can use every day written and spoken English at an intermediate level.</p>
+                        <p>A B1 Preliminary certificate demonstrates that the learner can:</p>
+                        <ul>
+                            <li>Read simple textbooks and articles in English</li>
+                            <li>Write emails & articles on real-life subjects</li>
+                            <li>Understand factual information</li>
+                            <li>Show awareness of opinions and mood in spoken and written English.</li>
+                        </ul>
+                        <p>B1 Preliminary has 4 components:</p>
+                        <ul>
+                            <li>Reading (45 Minutes)</li>
+                            <li>Writing (45 Minutes)</li>
+                            <li>Listening (30 Minutes)</li>
+                            <li>Speaking (12 Minutes)</li>
+                        </ul>
+                        <p>Each of the four test components contributes to a profile which defines the candidate’s overall communicative language ability at this level.</p>
+                    </div>
+                </template>
+            </v-expansion-panel>
+            <v-expansion-panel>
+                <template #title>
+                    <span style="font-size: medium;"><b>B2 First Exam</b></span>
+                </template>
+                <template #text>
+                    <div>
+                        <p>The B2 First examination is for candidates who has practical language skills for everyday written and spoken situations.</p>
+                        <p>With a B2 First qualification, learners will be prepared to:</p>
+                        <ul>
+                            <li>Start working in an English-speaking environment</li>
+                            <li>Study at an upper-intermediate level, such as foundation or pathway courses</li>
+                            <li>Live independently in an English-speaking country</li>
+                        </ul>
+                        <p>B2 First has 4 components:</p>
+                        <ul>
+                            <li>Reading and Use of English (75 Minutes)</li>
+                            <li>Writing (80 Minutes)</li>
+                            <li>Listening (40 Minutes)</li>
+                            <li>Speaking(14 Minutes)</li>
+                        </ul>
+                        <p>Each of the four test components contributes to a profile which defines the candidate’s overall communicative language ability at this level.</p>
+                    </div>
+                </template>
+            </v-expansion-panel>
+            <v-expansion-panel>
+                <template #title>
+                    <span style="font-size: medium;"><b>C1 Advanced Exam</b></span>
+                </template>
+                <template #text>
+                    <div>
+                        <p>The C1 Advanced examination is for candidates who can communicate in English at an advanced level and wish to pursue a managerial or professional career, or to follow a course of academic study.</p>
+                        <p>C1 Advanced is aimed at learners who need to show that they can:</p>
+                        <ul>
+                            <li>Enrol for an academic course at university level</li>
+                            <li>Effectively interact with people at managerial or professional level</li>
+                            <li>Conduct challenging research</li>
+                        </ul>
+                        <p>C1 Advanced has 4 components:</p>
+                        <ul>
+                            <li>Reading and Use of English (90 Minutes)</li>
+                            <li>Writing (90 Minutes)</li>
+                            <li>Listening (40 Minutes)</li>
+                            <li>Speaking(15 Minutes)</li>
+                        </ul>
+                        <p>Each of the four test components contributes to a profile which defines the candidate’s overall communicative language ability at this level.</p>
+                    </div>
+                </template>
+            </v-expansion-panel>
+            <v-expansion-panel>
+                <template #title>
+                    <span style="font-size: medium;"><b>C2 Proficiency Exam</b></span>
+                </template>
+                <template #text>
+                    <div>
+                        <p>The C2 Proficiency examination is for candidates who have an appropriate level of educational and personal maturity and can use English for study or professional purposes. Success at this very advanced level exam represents a significant personal achievement.</p>
+                        <p>C2 Proficiency is aimed for learners who need to show that they can:</p>
+                        <ul>
+                            <li>Follow a high level academic course and participate confidently in seminars and tutorials related to it</li>
+                            <li>Lead and conduct research.</li>
+                            <li>Partake in negotiation and persuasion at managerial and professional levels.</li>
+                        </ul>
+                        <p>C2 Proficiency has 4 components:</p>
+                        <ul>
+                            <li>Reading and Use of English (90 Minutes)</li>
+                            <li>Writing (90 Minutes)</li>
+                            <li>Listening (40 Minutes)</li>
+                            <li>Speaking (16 Minutes)</li>
+                        </ul>
+                        <p>Each test components contributes to a profile which defines the candidate’s overall communicative language ability at this level.</p>
+                    </div>
+                </template>
+            </v-expansion-panel>
+        </v-expansion-panels>
     </div>
+
     <v-row>
         <v-col cols="12">
             <p class="paragraph mt-2" data-aos="fade-up" data-aos-duration="3000">
@@ -261,7 +381,7 @@ export default {
     data() {
         return {
             logo: require('@/assets/Logo.png'),
-            reveal: false,
+            show1: false,
         }
     },
 }

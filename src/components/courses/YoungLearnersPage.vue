@@ -126,47 +126,47 @@
     <br>
     <div class="center-container">
         <v-container>
-        <v-row justify="center" align="center">
-            <v-timeline side="end">
-                <v-timeline-item dot-color="#FF5722" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Beginner Level (Starters)" color="#FF5722" elevation="10" data-aos="fade-left" data-aos-duration="1500">
-                        <v-card-text>
-                            In the beginner level, children will be able to:
-                            <ul class="bullet-list">
-                                <li>Read and write simple sentences</li>
-                                <li>Spell simple words</li>
-                                <li>Understand short conversations</li>
-                            </ul>
-                        </v-card-text>
-                    </v-card>
-                </v-timeline-item>
-                <v-timeline-item dot-color="#FF9800" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Intermediate Level (Movers)" color="#FF9800" elevation="10" data-aos="fade-left" data-aos-duration="2000">
-                        <v-card-text>
-                            In the intermediate level, children will be able to:
-                            <ul class="bullet-list">
-                                <li>Understand simple English stories</li>
-                                <li>Write and understand simple sentences</li>
-                                <li>Answer basic questions using correct expressions</li>
-                            </ul>
-                        </v-card-text>
-                    </v-card>
-                </v-timeline-item>
-                <v-timeline-item dot-color="#4CAF50" size="small">
-                    <v-card class="mx-auto hover-card" subtitle="" title="Higher Level (Flyers)" color="#4CAF50" elevation="10" data-aos="fade-left" data-aos-duration="2500">
-                        <v-card-text>
-                            In the higher levels, children will be able to:
-                            <ul class="bullet-list">
-                                <li>Understand longer texts about everyday topics</li>
-                                <li>Write short stories and short messages</li>
-                                <li>Tell a story using their own ideas</li>
-                            </ul>
-                        </v-card-text>
-                    </v-card>
-                </v-timeline-item>
-            </v-timeline>
-        </v-row>
-    </v-container>
+            <v-row justify="center" align="center">
+                <v-timeline side="end">
+                    <v-timeline-item dot-color="#FF5722" size="small">
+                        <v-card class="mx-auto hover-card" subtitle="" title="Beginner Level (Starters)" color="#FF5722" elevation="10" data-aos="fade-left" data-aos-duration="1500">
+                            <v-card-text>
+                                In the beginner level, children will be able to:
+                                <ul class="bullet-list">
+                                    <li>Read and write simple sentences</li>
+                                    <li>Spell simple words</li>
+                                    <li>Understand short conversations</li>
+                                </ul>
+                            </v-card-text>
+                        </v-card>
+                    </v-timeline-item>
+                    <v-timeline-item dot-color="#FF9800" size="small">
+                        <v-card class="mx-auto hover-card" subtitle="" title="Intermediate Level (Movers)" color="#FF9800" elevation="10" data-aos="fade-left" data-aos-duration="2000">
+                            <v-card-text>
+                                In the intermediate level, children will be able to:
+                                <ul class="bullet-list">
+                                    <li>Understand simple English stories</li>
+                                    <li>Write and understand simple sentences</li>
+                                    <li>Answer basic questions using correct expressions</li>
+                                </ul>
+                            </v-card-text>
+                        </v-card>
+                    </v-timeline-item>
+                    <v-timeline-item dot-color="#4CAF50" size="small">
+                        <v-card class="mx-auto hover-card" subtitle="" title="Higher Level (Flyers)" color="#4CAF50" elevation="10" data-aos="fade-left" data-aos-duration="2500">
+                            <v-card-text>
+                                In the higher levels, children will be able to:
+                                <ul class="bullet-list">
+                                    <li>Understand longer texts about everyday topics</li>
+                                    <li>Write short stories and short messages</li>
+                                    <li>Tell a story using their own ideas</li>
+                                </ul>
+                            </v-card-text>
+                        </v-card>
+                    </v-timeline-item>
+                </v-timeline>
+            </v-row>
+        </v-container>
     </div>
     <br>
     <v-divider></v-divider>
@@ -215,7 +215,6 @@
 <FooterPage></FooterPage>
 </template>
 
-  
 <script>
 import NavBar from '../NavBar.vue'
 import FooterPage from '../FooterPage.vue'
@@ -241,7 +240,6 @@ export default {
 }
 </script>
 
-  
 <style>
 .title {
     text-align: center;
