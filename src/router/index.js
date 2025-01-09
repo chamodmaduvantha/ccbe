@@ -13,6 +13,7 @@ const PreschoolPage = () => import('../components/courses/PreschoolPage.vue');
 const YoungLearnersPage = () => import('../components/courses/YoungLearnersPage.vue');
 const ForSchoolPage = () => import('../components/courses/ForSchoolPage.vue');
 const EnglishskillsforOLPage = () => import('../components/courses/EnglishskillsforOLPage.vue');
+const EnglishskillsforALPage = () => import('../components/courses/EnglishskillsforALPage.vue');
 
 const routes = [
   {
@@ -54,6 +55,11 @@ const routes = [
     path: '/course/ol',
     name: 'EnglishskillsforOLPage',
     component: EnglishskillsforOLPage,
+  },
+  {
+    path: '/course/al',
+    name: 'EnglishskillsforALPage',
+    component: EnglishskillsforALPage,
   },
 
 ];
