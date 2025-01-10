@@ -101,7 +101,7 @@
     
     
         <v-row justify="center" align="center" class="my-5">
-            <v-btn rounded="xl" size="large" color="#FBB700" class="custom-btn-contact" elevation="10" to="">
+            <v-btn rounded="xl" size="large" color="#FBB700" class="custom-btn-contact" elevation="10" to="/contact">
                 <v-icon left>mdi-phone</v-icon>
                 Contact Us
             </v-btn>
