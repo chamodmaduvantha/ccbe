@@ -7,6 +7,7 @@ const HomePage = () => import('../components/HomePage.vue');
 const AboutUs = () => import('../components/AboutUs.vue');
 const CoursePage = () => import('../components/CoursePage.vue');
 const CoreValuesPage = () => import('../components/CoreValuesPage.vue');
+const ContactUsPage = () => import('../components/ContactUsPage.vue');
 
 //Cources
 const PreschoolPage = () => import('../components/courses/PreschoolPage.vue');
@@ -17,57 +18,19 @@ const EnglishskillsforALPage = () => import('../components/courses/Englishskills
 const IELTSPage = () => import('../components/courses/IELTSPage.vue');
 
 const routes = [
-  {
-    path: '/', // Ensure this is '/' for the root path
-    name: 'HomePage',
-    component: HomePage
-  },
-  {
-    path: '/about',
-    name: 'AboutUs',
-    component: AboutUs
-  },
-  {
-    path: '/courses',
-    name: 'CoursePage',
-    component: CoursePage,
-  },
-  {
-    path: '/corevalues',
-    name: 'CoreValuesPage',
-    component: CoreValuesPage,
-  },
-  {
-    path: '/courses/preschool',
-    name: 'PreschoolPage',
-    component: PreschoolPage,
-  },
-  {
-    path: '/course/younglearners',
-    name: 'YoungLearnersPage',
-    component: YoungLearnersPage,
-  },
-  {
-    path: '/course/forschool',
-    name: 'ForSchoolPage',
-    component: ForSchoolPage,
-  },
-  {
-    path: '/course/ol',
-    name: 'EnglishskillsforOLPage',
-    component: EnglishskillsforOLPage,
-  },
-  {
-    path: '/course/al',
-    name: 'EnglishskillsforALPage',
-    component: EnglishskillsforALPage,
-  },
-  {
-    path: '/course/ielts',
-    name: 'IELTSPage',
-    component: IELTSPage,
-  },
+  {path: '/', name: 'HomePage',component: HomePage},
+  {path: '/about',name: 'AboutUs',component: AboutUs},
+  {path: '/courses',name: 'CoursePage',component: CoursePage,},
+  {path: '/corevalues',name: 'CoreValuesPage',component: CoreValuesPage,},
+  {path: '/contact',name: 'contact',component: ContactUsPage,},
 
+
+  {path: '/courses/preschool',name: 'PreschoolPage',component: PreschoolPage,},
+  {path: '/course/younglearners',name: 'YoungLearnersPage',component: YoungLearnersPage,},
+  {path: '/course/forschool',name: 'ForSchoolPage',component: ForSchoolPage,},
+  {path: '/course/ol',name: 'EnglishskillsforOLPage',component: EnglishskillsforOLPage,},
+  {path: '/course/al',name: 'EnglishskillsforALPage',component: EnglishskillsforALPage,},
+  {path: '/course/ielts',name: 'IELTSPage',component: IELTSPage,},
 ];
 
 const router = createRouter({

@@ -47,8 +47,6 @@
     
         <v-divider></v-divider>
     
-
-    
         <section class="why-choose-us" ref="statsSection" style="background-color: #5E0000 !important;">
             <h2 class="title mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">
                 Course Details

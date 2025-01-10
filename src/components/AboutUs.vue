@@ -32,7 +32,6 @@
                     </p>
                 </v-col>
             </v-row>
-
         </div>
 
         <v-divider></v-divider>
