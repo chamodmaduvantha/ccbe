@@ -27,6 +27,9 @@
     </p>
     <br />
 
+    
+
+    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" class="mt-3">
     <v-divider></v-divider>
     <section class="why-choose-us" ref="statsSection" style="background-color: white; padding: 50px 0;">
     <h2 class="title mt-5 text-center" style="color: #FBB700; font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000"><span class="highlight">Why Choose Us</span></h2>
@@ -79,6 +82,7 @@
         </v-row>
     </v-container>
 </section>
+</v-parallax>
 
     <br>
 
