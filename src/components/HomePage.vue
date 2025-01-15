@@ -28,37 +28,58 @@
     <br />
 
     <v-divider></v-divider>
-    <section class="why-choose-us" ref="statsSection" style="background-color: #5E0000 !important;">
-        <h2 class="title mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">Why Choose Us</h2>
-        <v-container>
-            <v-row justify="center" align="center" class="stats-row">
-                <v-col cols="12" sm="6" md="3" class="text-center">
-                    <v-card class="mx-auto" width="auto" height="auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outline>
-                        <h3 class="stat-value">{{ happyStudents }} + </h3>
-                        <p class="stat-label">Happy Students</p>
-                    </v-card>
-                </v-col>
-                <v-col cols="12" sm="6" md="3" class="text-center">
-                    <v-card class="mx-auto" width="auto" height="auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outline>
-                        <h3 class="stat-value">{{ qualifiedTeachers }} + </h3>
-                        <p class="stat-label">Qualified Teachers</p>
-                    </v-card>
-                </v-col>
-                <v-col cols="12" sm="6" md="3" class="text-center">
-                    <v-card class="mx-auto" width="auto" height="auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outline>
-                        <h3 class="stat-value">{{ yearsInField }} + </h3>
-                        <p class="stat-label">Years In The Field</p>
-                    </v-card>
-                </v-col>
-                <v-col cols="12" sm="6" md="3" class="text-center">
-                    <v-card class="mx-auto" width="auto" height="auto" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outline>
-                        <h3 class="stat-value">{{ branches }} </h3>
-                        <p class="stat-label">Branches To Choose</p>
-                    </v-card>
-                </v-col>
-            </v-row>
-        </v-container>
-    </section>
+    <section class="why-choose-us" ref="statsSection" style="background-color: white; padding: 50px 0;">
+    <h2 class="title mt-5 text-center" style="color: #FBB700; font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000"><span class="highlight">Why Choose Us</span></h2>
+    
+    <v-container>
+        <v-row justify="center" align="center" class="stats-row" spacing="4">
+            <!-- Card 1: Happy Students -->
+            <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500">
+                <v-card class="mx-auto stats-card" outlined>
+                    <v-img src="@/assets/section/Sec1.jpg" height="200px" class="stats-card-img"></v-img>
+                    <div class="card-content">
+                        <h3 class="stat-value" style="font-size: 28px; color: #FBB700; font-weight: bold;">{{ happyStudents }} +</h3>
+                        <p class="stat-label" style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif;">Happy Students</p>
+                    </div>
+                </v-card>
+            </v-col>
+
+            <!-- Card 2: Qualified Teachers -->
+            <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200">
+                <v-card class="mx-auto stats-card" outlined>
+                    <v-img src="@/assets/section/Sec2.jpg" height="200px" class="stats-card-img"></v-img>
+                    <div class="card-content">
+                        <h3 class="stat-value" style="font-size: 28px; color: #FBB700; font-weight: bold;">{{ qualifiedTeachers }} +</h3>
+                        <p class="stat-label" style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif;">Qualified Teachers</p>
+                    </div>
+                </v-card>
+            </v-col>
+
+            <!-- Card 3: Years In The Field -->
+            <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+                <v-card class="mx-auto stats-card" outlined>
+                    <v-img src="@/assets/section/Sec3.jpg" height="200px" class="stats-card-img"></v-img>
+                    <div class="card-content">
+                        <h3 class="stat-value" style="font-size: 28px; color: #FBB700; font-weight: bold;">{{ yearsInField }} +</h3>
+                        <p class="stat-label" style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif;">Years In The Field</p>
+                    </div>
+                </v-card>
+            </v-col>
+
+            <!-- Card 4: Branches -->
+            <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
+                <v-card class="mx-auto stats-card" outlined>
+                    <v-img src="@/assets/section/Sec4.jpg" height="200px" class="stats-card-img"></v-img>
+                    <div class="card-content">
+                        <h3 class="stat-value" style="font-size: 28px; color: #FBB700; font-weight: bold;">{{ branches }}</h3>
+                        <p class="stat-label" style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif;">Branches To Choose</p>
+                    </div>
+                </v-card>
+            </v-col>
+        </v-row>
+    </v-container>
+</section>
+
     <br>
 
     <v-divider></v-divider>
@@ -184,36 +205,7 @@ export default {
                     image: require('@/assets/cards/33.jpg'),
                 },
             ],
-            professionals: [{
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
+            professionals: [
                 {
                     name: 'Dr. Sugeeth Patabendige',
                     position: 'Chief Programme Architect',
@@ -419,5 +411,58 @@ export default {
   max-height: 120px;
   object-fit: cover;
   border-radius: 10px;
+}
+.why-choose-us {
+    padding: 50px 0;
+    background-color: #5E0000;
+}
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: #FBB700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.stats-row .v-col {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.stats-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.stats-card-img {
+    object-fit: cover;
+    border-bottom: 3px solid #FBB700;
+}
+
+.card-content {
+    padding: 20px;
+    background-color: #5E0000;
+}
+
+.stat-value {
+    font-size: 28px;
+    color: #FBB700;
+    font-weight: bold;
+}
+
+.stat-label {
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.v-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stats-row .v-col:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 </style>

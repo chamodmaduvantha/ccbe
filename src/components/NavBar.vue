@@ -14,23 +14,23 @@
     </v-row>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item mr-3">
+        <ul class="navbar-nav ml-auto mt-4">
+            <li class="nav-item mr-3 mt-1">
                 <v-btn rounded="xl" size="large" color="#FBB700" to="/" block>Home</v-btn>
             </li>
-            <li class="nav-item mr-3">
+            <li class="nav-item mr-3 mt-1">
                 <v-btn rounded="xl" size="large" color="#FBB700" to="/courses" block>Courses</v-btn>
             </li>
-            <li class="nav-item mr-3">
+            <li class="nav-item mr-3 mt-1">
                 <v-btn rounded="xl" size="large" color="#FBB700" to="/corevalues" block>Core Values</v-btn>
             </li>
-            <li class="nav-item mr-3">
+            <li class="nav-item mr-3 mt-1">
                 <v-btn rounded="xl" size="large" color="#FBB700" @click="dialog = true" block>Inquiry</v-btn>
             </li>
-            <li class="nav-item mr-3">
+            <li class="nav-item mr-3 mt-1">
                 <v-btn rounded="xl" size="large" color="#FBB700" to="/about" block>About Us</v-btn>
             </li>
-            <li class="nav-item mr-3">
+            <li class="nav-item mr-3 mt-1">
                 <v-btn rounded="xl" size="large" color="#FBB700" to="/contact" block>Contact</v-btn>
             </li>
         </ul>
