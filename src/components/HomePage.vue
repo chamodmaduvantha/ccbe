@@ -146,7 +146,7 @@
     </section>
 
 </v-container>
-
+<ChatBot></ChatBot>
 <FooterPage></FooterPage>
 </template>
 
@@ -154,6 +154,7 @@
 import CaroselPage from './CaroselPage.vue';
 import NavBar from './NavBar.vue';
 import FooterPage from './FooterPage.vue';
+import ChatBot from './ChatBot.vue'
 
 export default {
     name: 'HelloWorld',
@@ -161,6 +162,7 @@ export default {
         CaroselPage,
         NavBar,
         FooterPage,
+        ChatBot
     },
     data() {
         return {
