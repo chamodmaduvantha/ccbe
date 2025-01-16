@@ -129,22 +129,6 @@
     </v-container>
     <br />
 
-    <v-divider></v-divider>
-
-    <section class="industry-professionals">
-        <h2 class="title" data-aos="fade-up" data-aos-duration="3000">INDUSTRY <span class="highlight">PROFESSIONALS</span></h2>
-        <p class="subtitle">
-            The courses are a collaborative effort between Cambridge College of British English and industry professionals.
-        </p>
-        <v-row class="professionals-grid" justify="space-around" data-aos="fade-up" data-aos-duration="3000">
-            <v-col v-for="professional in professionals" :key="professional.name" class="text-center" cols="12" sm="6" md="4" lg="3">
-                <img :src="professional.image" :alt="professional.name" class="profile-pic">
-                <h4 class="name">{{ professional.name }}</h4>
-                <p class="position">{{ professional.position }}</p>
-            </v-col>
-        </v-row>
-    </section>
-
 </v-container>
 <ChatBot></ChatBot>
 <FooterPage></FooterPage>
@@ -209,33 +193,6 @@ export default {
                     message: "I loved the personalized attention and innovative teaching methods at CCBE.",
                     rating: 5,
                     image: require('@/assets/cards/33.jpg'),
-                },
-            ],
-            professionals: [
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
-                },
-                {
-                    name: 'Dr. Sugeeth Patabendige',
-                    position: 'Chief Programme Architect',
-                    image: require('@/assets/cards/Teacher.jpg'),
                 },
             ],
             logo: require('@/assets/Logo.png'),
