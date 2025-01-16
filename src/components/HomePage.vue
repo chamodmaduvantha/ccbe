@@ -2,7 +2,6 @@
 <NavBar></NavBar>
 <CaroselPage></CaroselPage>
 
-
 <v-container>
     <!-- Logo Section -->
     <div class="logo-container mt-2" data-aos="zoom-in-up" data-aos-duration="3000">
@@ -27,62 +26,82 @@
     </p>
     <br />
 
-    
-
-    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg" class="mt-3">
     <v-divider></v-divider>
     <section class="why-choose-us" ref="statsSection" style="background-color: white; padding: 50px 0;">
-    <h2 class="title mt-5 text-center" style="color: #FBB700; font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000"><span class="highlight">OUR STRENGTH</span></h2>
-    
-    <v-container>
-        <v-row justify="center" align="center" class="stats-row" spacing="4">
-            <!-- Card 1: Happy Students -->
-            <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500">
-                <v-card class="mx-auto stats-card" outlined>
-                    <v-img src="@/assets/section/Sec1.jpg" height="200px" class="stats-card-img"></v-img>
-                    <div class="card-content">
-                        <h3 class="stat-value" style="font-size: 28px; color: #FBB700; font-weight: bold;">{{ happyStudents }} +</h3>
-                        <p class="stat-label" style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif;">Happy Students</p>
-                    </div>
-                </v-card>
-            </v-col>
+        <h2 class="title mt-5 text-center" style="color: #FBB700; font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000"><span class="highlight">OUR STRENGTH</span></h2>
 
-            <!-- Card 2: Qualified Teachers -->
-            <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="200">
-                <v-card class="mx-auto stats-card" outlined>
-                    <v-img src="@/assets/section/Sec2.jpg" height="200px" class="stats-card-img"></v-img>
-                    <div class="card-content">
-                        <h3 class="stat-value" style="font-size: 28px; color: #FBB700; font-weight: bold;">{{ qualifiedTeachers }} +</h3>
-                        <p class="stat-label" style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif;">Qualified Teachers</p>
-                    </div>
-                </v-card>
-            </v-col>
+        <v-container>
+            <v-row justify="center" align="center" class="stats-row" spacing="4">
+                <!-- Card 1: Happy Students -->
+                <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1000">
+                    <v-card class="mx-auto" max-width="344" outlined>
+                        <div class="text-overline mb-2">
+                            <p class="stat-label" style="color: #5E0000; font-size: 22px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Happy Students</p>
+                        </div>
+                        <v-row justify="center">
+                            <v-col cols="auto mb-3">
+                                <v-img src="@/assets/icons/Student.png" width="100"></v-img>
+                            </v-col>
+                        </v-row>
+                        <v-list-item-title class="text-h5 mb-1">
+                            <h3 class="stat-value" style="font-size: 28px; color: Red; font-weight: bold;">{{ happyStudents }} +</h3>
+                        </v-list-item-title>
+                    </v-card>
+                </v-col>
 
-            <!-- Card 3: Years In The Field -->
-            <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
-                <v-card class="mx-auto stats-card" outlined>
-                    <v-img src="@/assets/section/Sec3.jpg" height="200px" class="stats-card-img"></v-img>
-                    <div class="card-content">
-                        <h3 class="stat-value" style="font-size: 28px; color: #FBB700; font-weight: bold;">{{ yearsInField }} +</h3>
-                        <p class="stat-label" style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif;">Years In The Field</p>
-                    </div>
-                </v-card>
-            </v-col>
+                <!-- Card 2: Qualified Teachers -->
+                <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500">
+                    <v-card class="mx-auto" max-width="344" outlined>
+                        <div class="text-overline mb-2">
+                            <p class="stat-label" style="color: #5E0000; font-size: 22px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Teachers</p>
+                        </div>
+                        <v-row justify="center">
+                            <v-col cols="auto mb-3">
+                                <v-img src="@/assets/icons/Teacher.png" width="100"></v-img>
+                            </v-col>
+                        </v-row>
+                        <v-list-item-title class="text-h5 mb-1">
+                            <h3 class="stat-value" style="font-size: 28px; color: Red; font-weight: bold;">{{ qualifiedTeachers }} +</h3>
+                        </v-list-item-title>
+                    </v-card>
+                </v-col>
 
-            <!-- Card 4: Branches -->
-            <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="600">
-                <v-card class="mx-auto stats-card" outlined>
-                    <v-img src="@/assets/section/Sec4.jpg" height="200px" class="stats-card-img"></v-img>
-                    <div class="card-content">
-                        <h3 class="stat-value" style="font-size: 28px; color: #FBB700; font-weight: bold;">{{ branches }}</h3>
-                        <p class="stat-label" style="color: white; font-size: 18px; font-family: 'Roboto', sans-serif;">Branches To Choose</p>
-                    </div>
-                </v-card>
-            </v-col>
-        </v-row>
-    </v-container>
-</section>
-</v-parallax>
+                <!-- Card 3: Years In The Field -->
+                <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="2000">
+                    <v-card class="mx-auto" max-width="344" outlined>
+                        <div class="text-overline mb-2">
+                            <p class="stat-label" style="color: #5E0000; font-size: 22px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;">Years In The Field</p>
+                        </div>
+                        <v-row justify="center">
+                            <v-col cols="auto mb-3">
+                                <v-img src="@/assets/icons/Year.png" width="100"></v-img>
+                            </v-col>
+                        </v-row>
+                        <v-list-item-title class="text-h5 mb-1">
+                            <h3 class="stat-value" style="font-size: 28px; color: Red; font-weight: bold;">{{ yearsInField }} +</h3>
+                        </v-list-item-title>
+                    </v-card>
+                </v-col>
+
+                <!-- Card 4: Branches -->
+                <v-col cols="12" sm="6" md="3" class="text-center" data-aos="fade-down" data-aos-duration="2500">
+                    <v-card class="mx-auto" max-width="344" outlined>
+                        <div class="text-overline mb-2">
+                            <p class="stat-label" style="color: #5E0000; font-size: 22px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Branchers</p>
+                        </div>
+                        <v-row justify="center">
+                            <v-col cols="auto mb-3">
+                                <v-img src="@/assets/icons/Building.png" width="100"></v-img>
+                            </v-col>
+                        </v-row>
+                        <v-list-item-title class="text-h5 mb-1">
+                            <h3 class="stat-value" style="font-size: 28px; color: Red; font-weight: bold;">{{ branches }}</h3>
+                        </v-list-item-title>
+                    </v-card>
+                </v-col>
+            </v-row>
+        </v-container>
+    </section>
 
     <br>
 
@@ -360,21 +379,23 @@ export default {
     font-size: 1.2rem;
     color: #6c757d;
 }
+
 .carousel-content {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
 }
 
 .carousel-image {
-  max-width: 120px;
-  max-height: 120px;
-  object-fit: cover;
-  border-radius: 10px;
+    max-width: 120px;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
 }
+
 .why-choose-us {
     padding: 50px 0;
     background-color: #5E0000;
@@ -404,7 +425,6 @@ export default {
 
 .card-content {
     padding: 20px;
-    background-color: #5E0000;
 }
 
 .stat-value {
@@ -415,7 +435,7 @@ export default {
 
 .stat-label {
     font-size: 18px;
-    color: white;
+    color: rgb(20, 10, 10);
     font-family: 'Roboto', sans-serif;
 }
 
