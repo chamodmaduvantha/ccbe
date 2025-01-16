@@ -28,7 +28,7 @@
 
     <v-divider></v-divider>
     <section class="why-choose-us" ref="statsSection" style="background-color: white; padding: 50px 0;">
-        <h2 class="title mt-5 text-center" style="color: #FBB700; font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000"><span class="highlight">OUR STRENGTH</span></h2>
+        <h1 class="title mt-5 text-center" style="color: #FBB700; font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000">OUR <span class="highlight">STRENGTH</span></h1>
 
         <v-container>
             <v-row justify="center" align="center" class="stats-row" spacing="4">
@@ -274,7 +274,7 @@ export default {
 }
 
 .highlight {
-    color: #5E0000;
+    color: #FF5F15;
 }
 
 .subtitle {
