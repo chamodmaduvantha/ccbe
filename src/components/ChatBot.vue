@@ -4,7 +4,7 @@
     <div class="chatbot-container">
         <v-tooltip activator="hover" location="left" transition="scale-transition">
             <template v-slot:activator="{ props }">
-                <img v-bind="props" class="chatbot-image" :src="require('@/assets/icons/Chat.jpg')" alt="Chatbot" />
+                <img v-bind="props" class="chatbot-image" :src="require('@/assets/icons/CCBEBot.jpg')" alt="Chatbot" />
             </template>
             <span>Hi! How can I assist you today?</span> <!-- Tooltip content -->
         </v-tooltip>

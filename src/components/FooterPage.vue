@@ -12,7 +12,7 @@
                     <v-icon>{{ icon.name }}</v-icon>
                 </v-btn>
             </div>
-            <div class="logo-container">
+            <div class="logof-container">
                 <v-row justify="center" align="center" class="px-4">
                     <v-col cols="12" sm="6" md="3" lg="2" class="text-center">
                         <img class="responsive-logo" :src="logo" alt="Logo" />
@@ -70,7 +70,7 @@ export default {
     font-size: 25px;
 }
 
-.logo-container {
+.logof-container {
     width: 100%;
     background: white;
     padding: 10px;
