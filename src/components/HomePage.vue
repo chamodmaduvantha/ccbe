@@ -108,20 +108,8 @@
     <v-divider></v-divider>
     <br>
     <!-- News Feed Section -->
-    <h2 class="title mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #5E0000;">News Feed</h2>
-    <v-row class="text-center mt-5" justify="center">
-        <v-col v-for="(item, i) in items" :key="i" cols="12" sm="6" md="4" class="d-flex justify-center">
-            <v-card class="mx-auto" max-width="400" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-                <v-img :src="item.src" height="auto" width="auto" cover></v-img>
-                <v-card-subtitle class="black--text mt-3" style="color: black; font-weight: bold;">
-                    {{ item.subtitle }}
-                </v-card-subtitle>
-                <v-card-text>
-                    <div>{{ item.description }}</div>
-                </v-card-text>
-            </v-card>
-        </v-col>
-    </v-row>
+    <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">News & <span class="highlight">Events</span></h1>
+    <NewsSliderPage></NewsSliderPage>
     <br>
 
     <v-divider></v-divider>
@@ -158,17 +146,21 @@ import CaroselPage from './CaroselPage.vue';
 import NavBar from './NavBar.vue';
 import FooterPage from './FooterPage.vue';
 import ChatBot from './ChatBot.vue'
+import NewsSliderPage from './NewsSliderPage.vue';
 
 export default {
+    
     name: 'HelloWorld',
     components: {
         CaroselPage,
         NavBar,
         FooterPage,
-        ChatBot
+        ChatBot,
+        NewsSliderPage
     },
     data() {
         return {
+            model: null,
             happyStudents: 0,
             qualifiedTeachers: 0,
             yearsInField: 9,
