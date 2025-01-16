@@ -115,25 +115,11 @@
     <v-divider></v-divider>
 
     <br>
-    <h2 class="title mt-5" data-aos="fade-up" data-aos-duration="3000" style="color: #5E0000;">
-        TESTIMONIALS
-    </h2>
-    <v-container>
-        <v-row class="text-center mt-5" justify="center">
-            <v-col v-for="(testimonial, index) in testimonials" :key="index" cols="12" sm="6" md="4" class="d-flex justify-center">
-                <v-card class="mx-auto testimonial-card" max-width="400" data-aos="fade-up" data-aos-duration="2000" elevation="23">
-                    <v-img :src="testimonial.image" height="200px" class="rounded-t-lg"></v-img>
-                    <v-card-title class="testimonial-title">{{ testimonial.name }}</v-card-title>
-                    <v-card-text>
-                        <div>{{ testimonial.message }}</div>
-                    </v-card-text>
-                    <v-card-actions class="justify-center">
-                        <v-rating v-model="testimonial.rating" readonly color="amber" dense></v-rating>
-                    </v-card-actions>
-                </v-card>
-            </v-col>
-        </v-row>
-    </v-container>
+    <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
+        <span class="highlight">TESTIMONIALS</span>
+    </h1>
+    <TestimologyPage></TestimologyPage>
+
     <br />
 
 </v-container>
@@ -147,16 +133,18 @@ import NavBar from './NavBar.vue';
 import FooterPage from './FooterPage.vue';
 import ChatBot from './ChatBot.vue'
 import NewsSliderPage from './NewsSliderPage.vue';
+import TestimologyPage from './TestimologyPage.vue'
 
 export default {
-    
+
     name: 'HelloWorld',
     components: {
         CaroselPage,
         NavBar,
         FooterPage,
         ChatBot,
-        NewsSliderPage
+        NewsSliderPage,
+        TestimologyPage
     },
     data() {
         return {

@@ -29,39 +29,9 @@
     data() {
       return {
         currentSlide: 0,
-        visibleCards: 4, // Number of visible cards per slide
+        visibleCards: 3, // Number of visible cards per slide
         intervalId: null, // Store the interval ID for auto-slide
         courses: [
-          {
-            title: "MSc in Facilities Management",
-            description: "Kingston University (UK)",
-            level: "Postgraduate Level",
-            image: require("../assets/cards/22.jpg"),
-          },
-          {
-            title: "BA (Hons) in Fashion (TOP UP)",
-            description: "London Metropolitan University (UK)",
-            level: "Undergraduate Level",
-            image: require("../assets/cards/33.jpg"),
-          },
-          {
-            title: "BSc (Hons) in Nursing (TOP UP)",
-            description: "London Metropolitan University (UK)",
-            level: "Undergraduate Level",
-            image: require("../assets/cards/22.jpg"),
-          },
-          {
-            title: "BEng (Hons) in Biomedical Engineering (TOP UP)",
-            description: "London Metropolitan University (UK)",
-            level: "Undergraduate Level",
-            image: require("../assets/cards/33.jpg"),
-          },
-          {
-            title: "Pearson BTEC Level 5 HND in Business",
-            description: "Management",
-            level: "Higher National Diploma",
-            image: require("../assets/cards/22.jpg"),
-          },
           {
             title: "MSc in Facilities Management",
             description: "Kingston University (UK)",
