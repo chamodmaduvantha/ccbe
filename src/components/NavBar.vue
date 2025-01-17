@@ -36,13 +36,13 @@
                     <a class="nav-link text-black" href="/contact" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Contact</a>
                 </li>
                 <li class="nav-item mr-2">
-                    <a class="nav-link text-black" href="/news-events" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">News & Events</a>
+                    <a class="nav-link text-black" href="/news" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">News & Events</a>
                 </li>
                 <li class="nav-item mr-2">
                     <a class="nav-link text-black" href="/careers" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Careers</a>
                 </li>
                 <li class="nav-item mr-2">
-                    <a class="nav-link text-red" href="" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Payment</a>
+                    <a class="nav-link text-red" href="/payment" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Payment</a>
                 </li>
             </ul>
         </div>
