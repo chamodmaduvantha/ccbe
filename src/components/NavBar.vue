@@ -1,43 +1,54 @@
 <template>
-<nav class="navbar navbar-expand-lg navbar-light bg-white full-width-nav" style="background-color: #5E0000;">
-    <v-row align="center" justify="space-between" class="w-100">
-        <div class="d-flex align-items-center">
+<nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+        <!-- Brand Section -->
+        <div class="d-flex align-items-center" id="navLogo">
+            <h1 class="text-white mt-2" style="font-family: Arial, sans-serif; font-weight: bold; color: #FF5F15 !important;" >CCBE</h1>
             <a class="navbar-brand" href="#">
-                <img :src="logoPath" alt="Company Logo" width="110" height="100" class="d-inline-block align-top ml-3 mt-2 mr-1">
+                <img :src="logoPath" alt="Company Logo" width="100" height="100" class="d-inline-block align-top ml-3">
             </a>
-            <h2 class="text-white ml-3 mt-2" style="font-family: Arial, sans-serif; font-weight: bold; color: #5E0000 !important;">CCBE</h2>
         </div>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+        <!-- Toggler Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
+            <span class="navbar-toggler-icon" style="border-radius: 3px;"></span>
         </button>
-    </v-row>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto mt-4">
-            <li class="nav-item mr-3 mt-1">
-                <v-btn rounded="xl" size="large" color="#FBB700" to="/" block>Home</v-btn>
-            </li>
-            <li class="nav-item mr-3 mt-1">
-                <v-btn rounded="xl" size="large" color="#FBB700" to="/courses" block>Courses</v-btn>
-            </li>
-            <li class="nav-item mr-3 mt-1">
-                <v-btn rounded="xl" size="large" color="#FBB700" to="/corevalues" block>Core Values</v-btn>
-            </li>
-            <li class="nav-item mr-3 mt-1">
-                <v-btn rounded="xl" size="large" color="#FBB700" @click="dialog = true" block>Inquiry</v-btn>
-            </li>
-            <li class="nav-item mr-3 mt-1">
-                <v-btn rounded="xl" size="large" color="#FBB700" to="/about" block>About Us</v-btn>
-            </li>
-            <li class="nav-item mr-3 mt-1">
-                <v-btn rounded="xl" size="large" color="#FBB700" to="/contact" block>Contact</v-btn>
-            </li>
-        </ul>
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mt-3">
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-black" href="/" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Home</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-black" href="/courses" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Courses</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-black" href="/corevalues" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Core Values</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-black" @click="dialog = true" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Inquiry</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-black" href="/about" style="font-weight: bold; padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">About Us</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-black" href="/contact" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Contact</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-black" href="/news-events" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">News & Events</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-black" href="/careers" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Careers</a>
+                </li>
+                <li class="nav-item mr-2">
+                    <a class="nav-link text-red" href="" style="font-weight: bold;  padding: 10px 15px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: larger;">Payment</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
-
-<div class="pa-4 text-center">
+<div class="text-center">
     <v-dialog v-model="dialog" max-width="600">
         <v-card prepend-icon="mdi-account" title="Inquiry Form">
             <v-card-text>
@@ -188,39 +199,13 @@ export default {
 </script>
 
 <style scoped>
-.full-width-nav {
-    width: 100%;
-    padding: 0;
-    margin: 0;
+.navbar {
+  margin-bottom: 0; /* Ensures no margin under the navbar */
 }
-
-.navbar-brand img {
-    transition: transform 0.3s;
-}
-
-.navbar-brand img:hover {
-    transform: scale(1.1);
-}
-
-.nav-item v-btn {
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-}
-
-.v-btn:hover {
-    background-color: #120150;
-    color: #ffffff !important;
-    transition: 0.3s;
-}
-
-@media (max-width: 768px) {
-    .navbar-nav {
-        justify-content: center;
-        flex-direction: column;
-    }
-
-    .nav-item {
-        margin-bottom: 10px;
-    }
+.navbar {
+  margin-bottom: 0;
+  padding-bottom: 0; /* Prevent any padding issues */
+  border: none; /* Removes unwanted bottom border */
+  box-shadow: none; /* Removes any shadow */
 }
 </style>

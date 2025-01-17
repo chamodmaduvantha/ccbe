@@ -48,11 +48,6 @@ export default {
 </script>
 
 <style scoped>
-.parallax-carousel-container {
-    width: 100%;
-    overflow: hidden;
-}
-
 .parallax-item {
     height: 100%;
     display: flex;
@@ -74,7 +69,10 @@ export default {
     border-radius: 10px;
     width: 80%;
 }
-
+.parallax-carousel-container {
+  padding-top: 0; /* Prevent extra space */
+  width: 100%;
+}
 .carousel-title {
     font-size: 2.5rem;
     font-weight: bold;
@@ -95,4 +93,5 @@ export default {
         font-size: 1rem;
     }
 }
+
 </style>
