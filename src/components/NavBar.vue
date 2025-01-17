@@ -208,4 +208,16 @@ export default {
   border: none; /* Removes unwanted bottom border */
   box-shadow: none; /* Removes any shadow */
 }
+.navbar {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden;    /* Hide overflow if needed */
+}
+
+.nav-item {
+  word-break: normal;    /* Prevent breaking words */
+  white-space: nowrap;   /* Prevent text wrapping within the item */
+}
+body {
+  font-family: 'YourCustomFont', sans-serif; /* Add a fallback font like sans-serif */
+}
 </style>

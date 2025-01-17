@@ -3,8 +3,8 @@
     <v-container>
         <v-row>
             <v-col v-for="(tweet, index) in tweets" :key="index" cols="12" md="6" lg="4">
-                <v-card class="mx-auto text-white" color="#FBB700" max-width="400" height="275" title="YouTube">
-                
+                <v-card class="mx-auto" color="yellow-darken-3" max-width="400" height="auto" title="YouTube">
+
                     <template v-slot:prepend>
                         <v-icon size="x-large">mdi-youtube</v-icon>
                     </template>
@@ -16,20 +16,15 @@
                     <v-card-actions>
                         <v-list-item class="w-100">
                             <template v-slot:prepend>
-                                <v-avatar color="grey-darken-3" :image="tweet.userAvatar"></v-avatar>
+                                <v-avatar color="amber-accent-4" :image="tweet.userAvatar"></v-avatar>
                             </template>
 
                             <v-list-item-title>{{ tweet.userName }}</v-list-item-title>
                             <v-list-item-subtitle>{{ tweet.userRole }}</v-list-item-subtitle>
-
+                            <a :href="tweet.link" target="_blank" rel="noopener noreferrer">
+                                <v-icon>mdi-link</v-icon>
+                            </a>
                             <template v-slot:append>
-                                <div class="justify-self-end">
-                                    <v-icon class="me-1">mdi-heart</v-icon>
-                                    <span class="subheading me-2">{{ tweet.likes }}</span>
-                                    <span class="me-1">·</span>
-                                    <v-icon class="me-1">mdi-share-variant</v-icon>
-                                    <span class="subheading">{{ tweet.shares }}</span>
-                                </div>
                             </template>
                         </v-list-item>
                     </v-card-actions>
@@ -45,28 +40,32 @@ export default {
     data() {
         return {
             tweets: [{
-                    text: "Turns out semicolon-less style is easier and safer in TS because most gotcha edge cases are type invalid as well.",
-                    userName: "Evan You",
-                    userRole: "Vue Creator",
-                    userAvatar: "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortCurly&accessoriesType=Prescription02&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=White&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Default&skinColor=Light",
-                    likes: 256,
-                    shares: 45,
+                    text: "English became equal to my mother tongue apart from syllabus they taught so many things about life. They preapared me with an armor of English",
+                    userName: "Thilina Chamod",
+                    userRole: "Key Intake",
+                    userAvatar: "https://i.imgur.com/UhxexQx.png",
+                    link: "https://www.youtube.com/watch?v=Xb9PO6GwpYE&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=1"
                 },
                 {
-                    text: "Vue.js is an amazing framework for building user interfaces!",
-                    userName: "Vue Enthusiast",
-                    userRole: "Developer",
-                    userAvatar: "https://avataaars.io/?avatarStyle=Transparent&topType=ShortHairShortFlat&accessoriesType=Round&hairColor=Brown&facialHairType=MoustacheFancy&clotheType=BlazerSweater&clotheColor=Blue01&eyeType=Happy&eyebrowType=UpDown&mouthType=Smile&skinColor=Light",
-                    likes: 125,
-                    shares: 30,
+                    text: "I could improve my language skill like reading,writing,listning and speaking. The practice exam helped us to get good grades at British Council exam",
+                    userName: "Rishini Hansani",
+                    userRole: "IKEY002",
+                    userAvatar: "https://i.imgur.com/OVcyE5K.png",
+                    link: "https://www.youtube.com/watch?v=QgsrB9n_EVQ&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=2"
                 },
                 {
-                    text: "The Composition API makes writing reusable code so much easier in Vue 3.",
-                    userName: "Sarah Drasner",
-                    userRole: "Vue Advocate",
-                    userAvatar: "https://avataaars.io/?avatarStyle=Transparent&topType=LongHairStraight&accessoriesType=Kurt&hairColor=Blonde&facialHairType=Blank&clotheType=ShirtCrewNeck&clotheColor=PastelGreen&eyeType=Default&eyebrowType=RaisedExcited&mouthType=Default&skinColor=Pale",
-                    likes: 512,
-                    shares: 78,
+                    text: "With the course four months during this time we were able to improve the four language skills such as reading,writing,listing & speaking.",
+                    userName: "Hasanga Bingusara",
+                    userRole: "IKEY002",
+                    userAvatar: "https://i.imgur.com/uwGshdT.png",
+                    link: "https://www.youtube.com/watch?v=X3URJtpSRNc&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=3"
+                },
+                {
+                    text: "The dedicated instructors, comprehensive study materials, and interactive learning environment helped me achieve my desired score. I highly recommend it to anyone looking to excel in the IELTS exam",
+                    userName: "Ranmina Navoth",
+                    userRole: "IELTS",
+                    userAvatar: "https://i.imgur.com/cvgSdvj.png",
+                    link: "https://www.youtube.com/watch?v=5a-CoElEByk&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=4"
                 },
             ],
         };
@@ -76,6 +75,6 @@ export default {
 
 <style scoped>
 .card-container {
-  margin: 2rem auto;
+    margin: 2rem auto;
 }
 </style>

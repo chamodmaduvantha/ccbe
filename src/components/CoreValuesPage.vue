@@ -108,14 +108,55 @@ export default {
 
 
 <style>
+
 .title {
-    text-align: center;
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    color: #FBB700;
+    text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 3px;
 }
 
 .highlight {
-    color: #5E0000;
+    color: #FF5F15;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 20px 0;
+}
+.name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.title-intro {
+    font-family: "Arial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.paragraph {
+    font-family: "Roboto", sans-serif;
+    font-weight: 14px;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+}
+
+#logo {
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .subtitle {
@@ -207,4 +248,5 @@ li {
         margin-top: 20px;
     }
 }
+
 </style>

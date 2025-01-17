@@ -245,10 +245,6 @@ export default {
 </script>
 
 <style>
-.industry-professionals {
-    text-align: center;
-    margin: 50px 0;
-}
 
 .title {
     text-align: center;
@@ -270,23 +266,10 @@ export default {
     margin-top: 30px;
 }
 
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-    border: 3px solid #5E0000;
-}
-
 .name {
     font-weight: bold;
     font-size: 1.1rem;
     margin: 10px 0;
-}
-
-.position {
-    font-size: 0.9rem;
-    color: #777;
 }
 
 .title-intro {
