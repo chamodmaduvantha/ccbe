@@ -10,12 +10,38 @@
     </p>
     <br />
 
+    <v-row>
+        <!-- Loop through the cards array -->
+        <v-col v-for="(card, index) in cards" :key="index" cols="12" sm="6" md="4">
+            <v-card class="mx-auto" max-width="344">
+                <v-img :src="card.image" height="200px" cover></v-img>
+
+                <v-card-title>{{ card.title }}</v-card-title>
+
+                <v-card-subtitle>{{ card.subtitle }}</v-card-subtitle>
+
+                <v-card-actions>
+
+                    <v-spacer></v-spacer>
+
+                    <v-btn :icon="card.show ? 'mdi-chevron-up' : 'mdi-chevron-down'" @click="toggleCard(index)"></v-btn>
+                </v-card-actions>
+
+                <v-expand-transition>
+                    <div v-show="card.show">
+                        <v-divider></v-divider>
+
+                        <v-card-text>{{ card.content }}</v-card-text>
+                    </div>
+                </v-expand-transition>
+            </v-card>
+        </v-col>
+    </v-row>
 </v-container>
 <ChatBot></ChatBot>
 <FooterPage></FooterPage>
 </template>
 
-    
 <script>
 import AOS from 'aos';
 import NavBar from './NavBar.vue';
@@ -30,14 +56,46 @@ export default {
         FooterPage,
         ChatBot,
     },
-
+    data() {
+        return {
+            // Array of card data
+            cards: [{
+                    image: "https://cdn.vuetifyjs.com/images/cards/sunshine.jpg",
+                    title: "Top Western Road Trips",
+                    subtitle: "1,000 miles of wonder",
+                    content: "Explore the best road trips across the western United States. Unmatched scenic beauty awaits!",
+                    show: false,
+                },
+                {
+                    image: "https://cdn.vuetifyjs.com/images/cards/desert.jpg",
+                    title: "Desert Adventures",
+                    subtitle: "Sands of time",
+                    content: "Discover the serene beauty of desert landscapes with our guided tours and expert advice.",
+                    show: false,
+                },
+                {
+                    image: "https://cdn.vuetifyjs.com/images/cards/mountain.jpg",
+                    title: "Mountain Escapades",
+                    subtitle: "Reach new heights",
+                    content: "Adventure in the heart of towering peaks. Perfect for hikers, climbers, and nature lovers.",
+                    show: false,
+                },
+            ],
+        };
+    },
+    methods: {
+        toggleCard(index) {
+            this.cards[index].show = !this.cards[index].show;
+        },
+        exploreCard(card) {
+            alert(`Exploring: ${card.title}`);
+        },
+    },
 };
 AOS.init();
 </script>
 
-    
 <style>
-
 .title {
     text-align: center;
     font-size: 2rem;
@@ -47,6 +105,7 @@ AOS.init();
 .highlight {
     color: #FF5F15;
 }
+
 .paragraph {
     font-family: "Roboto", sans-serif;
     font-weight: 14px;
@@ -55,4 +114,10 @@ AOS.init();
     text-align: center;
 }
 
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: #FBB700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 </style>

@@ -1,4 +1,5 @@
 <template>
+    <DigitalLinerPage></DigitalLinerPage>
 <NavBar></NavBar>
 <CaroselPage></CaroselPage>
 
@@ -134,6 +135,7 @@ import FooterPage from './FooterPage.vue';
 import ChatBot from './ChatBot.vue'
 import NewsSliderPage from './NewsSliderPage.vue';
 import TestimologyPage from './TestimologyPage.vue'
+import DigitalLinerPage from './DigitalLinerPage.vue';
 
 export default {
 
@@ -144,7 +146,8 @@ export default {
         FooterPage,
         ChatBot,
         NewsSliderPage,
-        TestimologyPage
+        TestimologyPage,
+        DigitalLinerPage
     },
     data() {
         return {
