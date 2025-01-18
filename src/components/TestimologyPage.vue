@@ -33,6 +33,17 @@
         </v-row>
     </v-container>
 </div>
+<div class="video-container">
+    <v-container>
+        <v-row>
+            <v-col v-for="(video, index) in videos" :key="index" cols="12" md="6" lg="4">
+                <div class="video-frame">
+                    <iframe :src="video.link" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </v-col>
+        </v-row>
+    </v-container>
+</div>
 </template>
 
 <script>
@@ -100,7 +111,20 @@ export default {
                     userName: "Naduni Abeynayaka",
                     userRole: "FCE Intake",
                     userAvatar: "https://i.imgur.com/rHnx1oY.png",
-                    link: "https://www.youtube.com/watch?v=ZEyR-mUGTAs&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=8"
+                    link: "https://www.youtube.com/watch?v=Lsl_qzKhMjY&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=9"
+                },
+            ],
+            videos: [{
+
+                    link: "https://www.youtube.com/embed/uSr4JjCtge4?si=64lVPGcTuj4s4C-K",
+                },
+                {
+
+                    link: "https://www.youtube.com/embed/V_riM5h2pOQ?si=LufQypwbQLuMPFF1",
+                },
+                {
+
+                    link: "https://www.youtube.com/embed/uTyP39sO-Q0?si=OvU_rVvdvIeGqNOV",
                 },
             ],
         };
@@ -111,5 +135,23 @@ export default {
 <style scoped>
 .card-container {
     margin: 2rem auto;
+}
+.video-container {
+  margin: 2rem auto;
+}
+
+.video-frame {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-frame iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 </style>
