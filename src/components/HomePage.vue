@@ -6,7 +6,7 @@
 <v-container>
     <!-- Logo Section -->
     <div class="logo-container mt-2" data-aos="zoom-in-up" data-aos-duration="3000">
-        <img :src="logo" alt="Company Logo" width="120" height="120" id="logo" />
+        <img :src="logo" alt="Company Logo" width="170" height="170" id="logo" />
     </div>
     <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
         Welcome to <span class="highlight">Cambridge College of British English</span>
