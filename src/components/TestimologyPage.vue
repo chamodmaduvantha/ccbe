@@ -67,6 +67,41 @@ export default {
                     userAvatar: "https://i.imgur.com/cvgSdvj.png",
                     link: "https://www.youtube.com/watch?v=5a-CoElEByk&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=4"
                 },
+                {
+                    text: "I prefer to recommend the IELTS Fast Track programm in Ambalangoda CCBE as the better place to boots the band who wish to sit the IELTS examination.",
+                    userName: "Prabhashini Chathurika",
+                    userRole: "IELTS",
+                    userAvatar: "https://i.imgur.com/CuMTG6e.png",
+                    link: "https://www.youtube.com/watch?v=16SXO8RDb4k&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=5"
+                },
+                {
+                    text: "During the course we were able to do lot of activities in English and we could in our four language skills such as reading,writing listning & speaking the evolutions.",
+                    userName: "Kushani Umanda",
+                    userRole: "IKEY002",
+                    userAvatar: "https://i.imgur.com/112f3FQ.png",
+                    link: "https://www.youtube.com/watch?v=-nBqEGHpnQs&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=6"
+                },
+                {
+                    text: "I wanted to improve my speaking skills as I'm expecting to go abroad for my highest studies at CCBE. I was given the best guidance we learn in a stressfree environment.",
+                    userName: "Jayani Bawathma",
+                    userRole: "IKF004",
+                    userAvatar: "https://i.imgur.com/ZX4g3yV.png",
+                    link: "https://www.youtube.com/watch?v=iN5WZINOmrk&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=7"
+                },
+                {
+                    text: "We could learn and make learned language skills through various academic activities the students entered classrooms help us to improve our confidence in English.",
+                    userName: "Vinuji Mallawa Arachchi",
+                    userRole: "IPET002",
+                    userAvatar: "https://i.imgur.com/tWsn1IZ.png",
+                    link: "https://www.youtube.com/watch?v=ZEyR-mUGTAs&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=8"
+                },
+                {
+                    text: "End of the course I faced Cambridge assessment exams confidently. Thanks to all the preparation sessions. I would really recommend CCBE to anyone out there come joing CCBE without hesitation.",
+                    userName: "Naduni Abeynayaka",
+                    userRole: "FCE Intake",
+                    userAvatar: "https://i.imgur.com/rHnx1oY.png",
+                    link: "https://www.youtube.com/watch?v=ZEyR-mUGTAs&list=PLnra1_c-Y6TiQiBCk1clsy80PVAp9Z1q3&index=8"
+                },
             ],
         };
     },
