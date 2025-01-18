@@ -127,17 +127,18 @@ export default {
 
 <style>
 .title {
+    color: #FBB700;
     text-align: center;
     font-size: 2rem;
     font-weight: bold;
 }
 
 .highlight {
-    color: #5E0000;
+    color: #FF5F15;
 }
 
 .cardtext {
-    color: #5E0000;
+    color: #d37400;
     font-size: 15px;
     text-align: justify;
 }
