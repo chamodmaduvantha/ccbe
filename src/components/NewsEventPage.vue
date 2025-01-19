@@ -120,4 +120,14 @@ AOS.init();
     text-transform: uppercase;
     font-weight: bold;
 }
+
+.v-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.stats-row .v-col:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
 </style>
