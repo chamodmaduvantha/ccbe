@@ -36,6 +36,7 @@
             </v-row>
         </div>
     </v-container>
+    <ChatBot></ChatBot>
     <FooterPage></FooterPage>
 </template>
 
@@ -43,6 +44,7 @@
 <script>
 import NavBar from './NavBar.vue';
 import FooterPage from './FooterPage.vue';
+import ChatBot from './ChatBot.vue';
 
 // AOS Transition
 import AOS from 'aos';
@@ -52,7 +54,8 @@ export default {
     name: 'CoreValues',
     components: {
         NavBar,
-        FooterPage
+        FooterPage,
+        ChatBot
     },
     mounted() {
         AOS.init(); // Initialize AOS when the component is mounted
@@ -195,23 +198,6 @@ h4 {
     /* Center horizontally */
     align-items: center;
     margin-top: 20px;
-}
-
-ul {
-    list-style: none;
-    /* Optional: remove bullet points */
-    padding: 0;
-    margin: 0 auto;
-    /* Centers the list horizontally */
-    text-align: center;
-    /* Centers the text within the list items */
-}
-
-li {
-    display: inline-block;
-    /* Optional: makes list items align horizontally */
-    margin: 0 10px;
-    /* Adjust spacing between items */
 }
 
 .center-container {

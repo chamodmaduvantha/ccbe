@@ -97,13 +97,14 @@
             </v-col>
         </v-row>
     </v-container>
+    <ChatBot></ChatBot>
     <FooterPage></FooterPage>
 </template>
 
 <script>
 import NavBar from './NavBar.vue';
 import FooterPage from './FooterPage.vue';
-
+import ChatBot from './ChatBot.vue';
 // AOS Transition
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -112,7 +113,8 @@ export default {
     name: 'CoursePage',
     components: {
         NavBar,
-        FooterPage
+        FooterPage,
+        ChatBot
     },
     mounted() {
         AOS.init(); // Initialize AOS when the component is mounted

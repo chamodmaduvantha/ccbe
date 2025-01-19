@@ -68,12 +68,14 @@
         </v-card>
     </v-dialog>
 </div>
+<ChatBot></ChatBot>
 <FooterPage></FooterPage>
 </template>
 
 <script>
 import NavBar from './NavBar.vue';
 import FooterPage from './FooterPage.vue';
+import ChatBot from './ChatBot.vue';
 import AOS from 'aos';
 
 export default {
@@ -109,7 +111,8 @@ export default {
     },
     components: {
         NavBar,
-        FooterPage
+        FooterPage,
+        ChatBot
     },
     mounted() {
         AOS.init(); // Initialize AOS when the component is mounted
