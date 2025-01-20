@@ -9,7 +9,7 @@
         <img :src="logo" alt="Company Logo" width="170" height="170" id="logo" />
     </div>
     <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
-        Welcome to <span class="highlight">Cambridge College of British English</span>
+        Welcome to 11<span class="highlight">Cambridge College of British English</span>
     </h1>
     <br />
     <p class="paragraph" data-aos="fade-up" data-aos-duration="3000" style="text-align: center;">
