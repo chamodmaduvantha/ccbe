@@ -26,17 +26,22 @@ export default {
     methods: {
         loadData() {
             this.items = [{
-                    src: require("../assets/carosel/1.jpg"),
+                    src: require("../assets/carosel/2.jpg"),
                     title: "Explore Beautiful Destinations",
                     subtitle: "Discover the world's best places with us.",
                 },
                 {
-                    src: require("../assets/carosel/2.jpg"),
+                    src: require("../assets/carosel/3.jpg"),
                     title: "Adventure Awaits",
                     subtitle: "Take the leap into unforgettable experiences.",
                 },
                 {
-                    src: require("../assets/carosel/3.jpg"),
+                    src: require("../assets/carosel/6.jpg"),
+                    title: "Unparalleled Luxury",
+                    subtitle: "Experience the height of comfort and elegance.",
+                },
+                {
+                    src: require("../assets/carosel/7.jpg"),
                     title: "Unparalleled Luxury",
                     subtitle: "Experience the height of comfort and elegance.",
                 },
