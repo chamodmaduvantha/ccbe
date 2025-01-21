@@ -67,7 +67,7 @@
             <h2 class="title mt-5" style="color: #FF5F15" data-aos="fade-up" data-aos-duration="3000">Course Details</h2>
             <v-container>
                 <v-row justify="center" align="center" class="stats-row">
-                    <v-col cols="12" sm="6" md="3" class="text-center">
+                    <v-col cols="12" sm="6" md="3" class="text-center d-flex justify-center">
                         <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
                                 <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/timer.gif"
@@ -77,7 +77,7 @@
                             <p>Contact us to find out</p>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="6" md="3" class="text-center">
+                    <v-col cols="12" sm="6" md="3" class="text-center d-flex justify-center">
                         <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
                             data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
@@ -88,7 +88,7 @@
                             <p>Contact us to find out</p>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="6" md="3" class="text-center">
+                    <v-col cols="12" sm="6" md="3" class="text-center d-flex justify-center">
                         <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
                             data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
@@ -99,7 +99,7 @@
                             <p>Contact us to find out</p>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="6" md="3" class="text-center">
+                    <v-col cols="12" sm="6" md="3" class="text-center d-flex justify-center">
                         <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
                             data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">

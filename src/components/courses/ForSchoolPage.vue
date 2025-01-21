@@ -64,7 +64,7 @@
         </h2>
         <v-container>
             <v-row justify="center" align="center" class="stats-row">
-                <v-col cols="12" sm="6" md="4" class="text-center">
+                <v-col cols="12" sm="6" md="4" class="text-center d-flex justify-center">
                     <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/timer.gif" max-width="100" height="100"></v-img>
@@ -73,7 +73,7 @@
                         <p>Contact us to find out</p>
                     </v-card>
                 </v-col>
-                <v-col cols="12" sm="6" md="4" class="text-center">
+                <v-col cols="12" sm="6" md="4" class="text-center d-flex justify-center">
                     <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/calender.gif" max-width="100" height="100"></v-img>
@@ -82,7 +82,7 @@
                         <p>Contact us to find out</p>
                     </v-card>
                 </v-col>
-                <v-col cols="12" sm="6" md="4" class="text-center">
+                <v-col cols="12" sm="6" md="4" class="text-center d-flex justify-center">
                     <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/fee.gif" max-width="100" height="100"></v-img>
@@ -91,7 +91,7 @@
                         <p>Contact us to find out</p>
                     </v-card>
                 </v-col>
-                <v-col cols="12" sm="6" md="4" class="text-center">
+                <v-col cols="12" sm="6" md="4" class="text-center d-flex justify-center">
                     <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/exam.gif" max-width="100" height="100"></v-img>
@@ -100,7 +100,7 @@
                         <p>A2,B1,B2,C1,C2 Proficiency</p>
                     </v-card>
                 </v-col>
-                <v-col cols="12" sm="6" md="4" class="text-center">
+                <v-col cols="12" sm="6" md="4" class="text-center d-flex justify-center">
                     <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <h1 class="mt-5"><b>Age</b></h1>
