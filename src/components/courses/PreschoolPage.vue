@@ -63,14 +63,12 @@
 
         <v-divider></v-divider>
 
-        <section class="why-choose-us" ref="statsSection" style="background-color: #5E0000 !important;">
-            <h2 class="title mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">Course Details
-            </h2>
+        <section class="why-choose-us  mt-5" ref="statsSection" style="background-color: white !important;">
+            <h2 class="title mt-5" style="color: #FF5F15" data-aos="fade-up" data-aos-duration="3000">Course Details</h2>
             <v-container>
                 <v-row justify="center" align="center" class="stats-row">
                     <v-col cols="12" sm="6" md="3" class="text-center">
-                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
-                            data-aos-duration="1500" outlined>
+                        <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
                                 <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/timer.gif"
                                     max-width="100" height="100"></v-img>
@@ -80,7 +78,7 @@
                         </v-card>
                     </v-col>
                     <v-col cols="12" sm="6" md="3" class="text-center">
-                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
+                        <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
                             data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
                                 <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/calender.gif"
@@ -91,7 +89,7 @@
                         </v-card>
                     </v-col>
                     <v-col cols="12" sm="6" md="3" class="text-center">
-                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
+                        <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
                             data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
                                 <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/fee.gif" max-width="100"
@@ -102,7 +100,7 @@
                         </v-card>
                     </v-col>
                     <v-col cols="12" sm="6" md="3" class="text-center">
-                        <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
+                        <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear"
                             data-aos-duration="1500" outlined>
                             <v-row justify="center" align="center">
                                 <h1 class="mt-5"><b>Age</b></h1>
@@ -134,13 +132,14 @@
             <h5 style="text-align: center;">Before enroling, All children Will take a Placement Test to determine which course is best-suited to their level of English language proficiency.</h5>
         </v-row>
     </v-container>
-
+    <ChatBot></ChatBot>
     <FooterPage></FooterPage>
 </template>
 
 <script>
 import NavBar from '../NavBar.vue'
 import FooterPage from '../FooterPage.vue'
+import ChatBot from '../ChatBot.vue';
 
 //AOS Trasnsition
 import AOS from 'aos';
@@ -150,7 +149,8 @@ export default {
     name: 'PreschoolPage',
     components: {
         NavBar,
-        FooterPage
+        FooterPage,
+        ChatBot
     },
     mounted() {
         AOS.init(); // Initialize AOS when the component is mounted
@@ -172,9 +172,15 @@ export default {
 }
 
 .highlight {
-    color: #5E0000;
+    color: #FF5F15;
 }
 
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: #FBB700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .subtitle {
     font-size: 1.2rem;
     color: #555;
@@ -208,22 +214,6 @@ export default {
     margin-top: 20px;
 }
 
-ul {
-    list-style: none;
-    /* Optional: remove bullet points */
-    padding: 0;
-    margin: 0 auto;
-    /* Centers the list horizontally */
-    text-align: center;
-    /* Centers the text within the list items */
-}
-
-li {
-    display: inline-block;
-    /* Optional: makes list items align horizontally */
-    margin: 0 10px;
-    /* Adjust spacing between items */
-}
 
 .center-container {
     display: flex;
@@ -239,6 +229,11 @@ li {
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
   background-color: #FBB700; /* Button background color */
   color: white; /* Text color */
+}
+
+.custom-card {
+  border: 2px solid #FF5F15; /* Replace #FF5F15 with your desired outline color */
+  border-radius: 10px; /* Optional: Adjust the border radius */
 }
 
 .custom-btn-contact:hover {

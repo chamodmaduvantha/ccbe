@@ -72,12 +72,12 @@
 
     <v-divider></v-divider>
 
-    <section class="why-choose-us" ref="statsSection" style="background-color: #5E0000 !important;">
+    <section class="why-choose-us" ref="statsSection" style="background-color: white !important;">
         <h2 class="title mt-5" style="color: #FBB700" data-aos="fade-up" data-aos-duration="3000">Course Details</h2>
         <v-container>
             <v-row justify="center" align="center" class="stats-row">
                 <v-col cols="12" sm="6" md="3" class="text-center">
-                    <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
+                    <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/timer.gif" max-width="100" height="100"></v-img>
                         </v-row>
@@ -86,7 +86,7 @@
                     </v-card>
                 </v-col>
                 <v-col cols="12" sm="6" md="3" class="text-center">
-                    <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
+                    <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/calender.gif" max-width="100" height="100"></v-img>
                         </v-row>
@@ -95,7 +95,7 @@
                     </v-card>
                 </v-col>
                 <v-col cols="12" sm="6" md="3" class="text-center">
-                    <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
+                    <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <v-img data-aos="zoom-out" class="mt-5" src="@/assets/animation/fee.gif" max-width="100" height="100"></v-img>
                         </v-row>
@@ -104,7 +104,7 @@
                     </v-card>
                 </v-col>
                 <v-col cols="12" sm="6" md="3" class="text-center">
-                    <v-card class="mx-auto" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
+                    <v-card class="custom-card" width="200" height="200" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500" outlined>
                         <v-row justify="center" align="center">
                             <h1 class="mt-5"><b>Age</b></h1>
                         </v-row>
@@ -248,9 +248,20 @@ export default {
 }
 
 .highlight {
-    color: #5E0000;
+    color: #FF5F15;
 }
 
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: #FBB700;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.custom-card {
+  border: 2px solid #FF5F15; /* Replace #FF5F15 with your desired outline color */
+  border-radius: 10px; /* Optional: Adjust the border radius */
+}
 .subtitle {
     font-size: 1.2rem;
     color: #555;
