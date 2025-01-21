@@ -1,44 +1,35 @@
 <template>
-<NavBar></NavBar>
-<v-container>
-    <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
-        <span class="highlight">Careers</span>
-    </h1>
-    <p class="paragraph" data-aos="fade-up" data-aos-duration="3000" style="text-align: center;">
-        <b>Cambridge College of British English (CCBE)</b> Careers is your gateway to a world of possibilities and a launchpad for your professional aspirations. Be part of a prestigious institution that not only prioritizes academic excellence but also nurtures a thriving community of dedicated professionals. Together, we inspire confidence, build futures, and redefine what it means to succeed.
-        Your career journey begins here at Cambridge College of British English!
-    </p>
-    <br />
-    <v-row>
-        <!-- Loop through the cards array -->
-        <v-col v-for="(card, index) in cards" :key="index" cols="12" sm="6" md="4">
-            <v-card class="mx-auto" max-width="344">
-                <v-img :src="card.image" height="200px" cover></v-img>
-                <v-card-title>{{ card.title }}</v-card-title>
-                <v-card-subtitle>{{ card.subtitle }}</v-card-subtitle>
-                <v-card-actions>
-                  <a href="mailto:jobs@ccbe.lk?subject=Job Application&body=Dear Hiring Team,%0D%0A%0D%0APlease find my application for the position.%0D%0A%0D%0ARegards,%0D%0A[Your Name]" 
-   class="apply-now-button">
-   Apply Now
-</a>
-                    <v-spacer></v-spacer>
-                    <v-btn :icon="card.show ? 'mdi-chevron-up' : 'mdi-chevron-down'" @click="toggleCard(index)"></v-btn>
-                </v-card-actions>
-                <v-expand-transition>
-                    <div v-show="card.show">
-                        <v-divider></v-divider>
-                        <v-card-text>{{ card.content }}</v-card-text>
-                    </div>
-                </v-expand-transition>
-            </v-card>
-        </v-col>
-    </v-row>
-</v-container>
-<ChatBot></ChatBot>
-<FooterPage></FooterPage>
+  <NavBar></NavBar>
+  <v-container>
+      <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
+          <span class="highlight">Careers</span>
+      </h1>
+      <p class="paragraph" data-aos="fade-up" data-aos-duration="3000" style="text-align: center;">
+          <b>Cambridge College of British English (CCBE)</b> Careers is your gateway to a world of possibilities and a launchpad for your professional aspirations. Be part of a prestigious institution that not only prioritizes academic excellence but also nurtures a thriving community of dedicated professionals. Together, we inspire confidence, build futures, and redefine what it means to succeed.
+          Your career journey begins here at Cambridge College of British English!
+      </p>
+      <v-row justify="center" class="mt-5">
+          <!-- Loop through careers array -->
+          <v-col v-for="(career, index) in careers" :key="index" cols="12" md="6">
+              <v-card outlined class="image-card">
+                  <v-img :src="career.image" height="100%" width="100%" cover></v-img>
+                  <v-card-actions class="text-center">
+                      <v-spacer></v-spacer>
+                      <h2 class="image-title">Join Our Team</h2>
+                      <a href="mailto:jobs@ccbe.lk?subject=Job Application&body=Dear Hiring Team,%0D%0A%0D%0APlease find my application for the position.%0D%0A%0D%0ARegards,%0D%0A[Your Name]" class="apply-now-button">
+                          Apply Now
+                      </a>
+                      <v-spacer></v-spacer>
+                  </v-card-actions>
+              </v-card>
+          </v-col>
+      </v-row>
+  </v-container>
+  <ChatBot></ChatBot>
+  <FooterPage></FooterPage>
 </template>
 
-  
+
 <script>
 import NavBar from './NavBar.vue';
 import FooterPage from './FooterPage.vue';
@@ -49,28 +40,33 @@ export default {
     name: 'CareersPage',
     data() {
         return {
-            dialog: false,
-            successDialog: false,
-            cards: [{
-                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsu5_VDfFM9wtCWkU_FY4xbusUYZC92J-6mw&s",
-                    title: "HR Executive (Female)",
-                    subtitle: "Qualifications",
-                    content: "Explore the best road trips across the western United States. Unmatched scenic beauty awaits!",
-                    show: false,
+            careers: [
+                {
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0006.jpg?updatedAt=1737434201584",
                 },
                 {
-                    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-DDipvxubwmxaKbupkDyRguolzQhn1jNpw&s",
-                    title: "IT Executive",
-                    subtitle: "Qualifications",
-                    content: "Discover the serene beauty of desert landscapes with our guided tours and expert advice.",
-                    show: false,
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0011.jpg?updatedAt=1737435218639",
                 },
                 {
-                    image: "https://e2e2u7e4v6q.exactdn.com/wp-content/uploads/2023/02/pexels-fauxels-3184328.jpg?strip=all&lossy=1&fit=427%2C427&ssl=1",
-                    title: "Assistant Lecturer",
-                    subtitle: "Qualifications",
-                    content: "Adventure in the heart of towering peaks. Perfect for hikers, climbers, and nature lovers.",
-                    show: false,
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0009.jpg?updatedAt=1737435218715",
+                },
+                {
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0007.jpg?updatedAt=1737435218724",
+                },
+                {
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0010.jpg?updatedAt=1737435218885",
+                },
+                {
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0012.jpg?updatedAt=1737435219022",
+                },
+                {
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0008.jpg?updatedAt=1737435219045",
+                },
+                {
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0015.jpg?updatedAt=1737435219046",
+                },
+                {
+                    image: "https://ik.imagekit.io/u3wbiya66/IMG-20250121-WA0014.jpg?updatedAt=1737435219125",
                 },
             ],
         };
@@ -86,8 +82,59 @@ export default {
 };
 </script>
 
-  
+
 <style scoped>
+.title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #FF5F15;
+}
+
+.paragraph {
+    font-family: "Roboto", sans-serif;
+    font-weight: 14px;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+}
+
+.image-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.apply-now-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF5F15;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.apply-now-button:hover {
+    background-color: #cc4a12;
+}
+
+.v-card-actions {
+    flex-direction: column;
+    align-items: center;
+}
+
 .title {
     text-align: center;
     font-size: 2rem;
