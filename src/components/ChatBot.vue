@@ -155,7 +155,7 @@
             <div>
               <strong>Ambalangoda College</strong><br />
               Address: 123 Main Street, Ambalangoda<br />
-              Email: <a href="mailto:ambalangoda@college.com">ambalangoda@college.com</a><br />
+              Email: <a href="mailto:ambalangodaccbe@gmail.com">ambalangoda@college.com</a><br />
               WhatsApp: <a href="https://wa.me/+94707997501" target="_blank">+94707997501</a><br />
               Landline: 091 2 252 452
             </div>
@@ -164,7 +164,7 @@
             <div>
               <strong>Galle College</strong><br />
               Address: 456 High Street, Galle<br />
-              Email: <a href="mailto:galle@college.com">galle@college.com</a><br />
+              Email: <a href="mailto:galleccbe@gmail.com">galle@college.com</a><br />
               WhatsApp: <a href="https://wa.me/+94705725666" target="_blank">+94705725666</a><br />
               Landline: 091 22 37 37 3
             </div>
@@ -173,7 +173,7 @@
             <div>
               <strong>Horana College</strong><br />
               Address: No: 149 Graceland, Circular Road, Horana, 12400<br />
-              Email: <a href="mailto:horana@college.com">horana@college.com</a><br />
+              Email: <a href="mailto:horanaccbe@gmail.com">horana@college.com</a><br />
               WhatsApp: <a href="https://wa.me/+94707997512" target="_blank">+94707997512</a><br />
               Landline: 034 2 205 503
             </div>
@@ -182,7 +182,7 @@
             <div>
               <strong>Matara College</strong><br />
               Address: No: 352, Kumarathunga Mawatha, Matara, 81000<br />
-              Email: <a href="mailto:matara@college.com">matara@college.com</a><br />
+              Email: <a href="mailto:mataraccbe@gmail.com">matara@college.com</a><br />
               WhatsApp: <a href="https://wa.me/+94707997506" target="_blank">+94707997506</a><br />
               Landline: 041 20 50 200
             </div>
@@ -191,7 +191,7 @@
             <div>
               <strong>Piliyandala College</strong><br />
               Address: No: 119, Moratuwa Road, Piliyandala, 10300<br />
-              Email: <a href="mailto:piliyandala@college.com">piliyandala@college.com</a><br />
+              Email: <a href="mailto:piliyandalaccbe@gmail.com">piliyandala@college.com</a><br />
               WhatsApp: <a href="https://wa.me/+94705834666" target="_blank">+94705834666</a><br />
               Landline: 011 2 180 008
             </div>

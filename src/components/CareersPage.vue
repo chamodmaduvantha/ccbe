@@ -8,7 +8,7 @@
           <b>Cambridge College of British English (CCBE)</b> Careers is your gateway to a world of possibilities and a launchpad for your professional aspirations. Be part of a prestigious institution that not only prioritizes academic excellence but also nurtures a thriving community of dedicated professionals. Together, we inspire confidence, build futures, and redefine what it means to succeed.
           Your career journey begins here at Cambridge College of British English!
       </p>
-      <v-row justify="center" class="mt-5">
+      <v-row justify="center" class="mt-5" data-aos="fade-up" data-aos-duration="3000">
           <!-- Loop through careers array -->
           <v-col v-for="(career, index) in careers" :key="index" cols="12" md="6">
               <v-card outlined class="image-card">
