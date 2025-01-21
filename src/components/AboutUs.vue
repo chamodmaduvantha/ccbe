@@ -95,13 +95,15 @@
             <p>{{ selectedOffice.phone }}</p>
         </div>
         <div>
-            <v-row justify="center" class="my-3">
+            <v-row justify="center" class="my-3 mb-3">
                 <v-btn data-aos="zoom-out" data-aos-duration="2000" rounded="xl" size="large" class="ml-1 mr-1 mb-1" color="#FBB700" v-for="(office, index) in offices" :key="index" outlined @click="selectOffice(office)">
                     {{ office.name }}
                 </v-btn>
             </v-row>
         </div>
-
+        <v-divider></v-divider>
+        <ViewT></ViewT>
+        
     </v-container>
     <ChatBot></ChatBot>
     <FooterPage></FooterPage>
@@ -111,6 +113,7 @@
 import NavBar from './NavBar.vue'
 import FooterPage from './FooterPage.vue'
 import ChatBot from './ChatBot.vue';
+import ViewT from './360View.vue'
 
 //AOS Trasnsition
 import AOS from 'aos';
@@ -122,7 +125,8 @@ export default {
     components: {
         NavBar,
         FooterPage,
-        ChatBot
+        ChatBot,
+        ViewT
     },
     mounted() {
         AOS.init(); // Initialize AOS when the component is mounted
