@@ -49,7 +49,7 @@ export default {
                 { name: 'mdi-instagram', link: 'https://www.instagram.com/ccbeamb' },
                 { name: 'mdi-facebook', link: 'https://www.facebook.com/ccbe.ambalangoda' },
                 { name: 'mdi-youtube', link: 'https://www.youtube.com/@cambridgecollegeofbritishe9360' },
-                { name: 'mdi-tiktok', link: 'https://www.tiktok.com/@cambridgecollege9' },
+                { name: 'mdi-music-note', link: 'https://www.tiktok.com/@cambridgecollege9' },
             ],
         };
     },
