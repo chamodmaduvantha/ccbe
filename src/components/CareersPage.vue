@@ -8,7 +8,7 @@
         <b>Cambridge College of British English (CCBE)</b> Careers is your gateway to a world of possibilities and a launchpad for your professional aspirations. Be part of a prestigious institution that not only prioritizes academic excellence but also nurtures a thriving community of dedicated professionals. Together, we inspire confidence, build futures, and redefine what it means to succeed.
         Your career journey begins here at Cambridge College of British English!
     </p>
-    <br>
+    <br />
     <v-row>
         <!-- Loop through the cards array -->
         <v-col v-for="(card, index) in cards" :key="index" cols="12" sm="6" md="4">
@@ -17,7 +17,10 @@
                 <v-card-title>{{ card.title }}</v-card-title>
                 <v-card-subtitle>{{ card.subtitle }}</v-card-subtitle>
                 <v-card-actions>
-                    <v-btn color="orange-darken-2" text="Apply Now" @click="openDialog"></v-btn>
+                  <a href="mailto:jobs@ccbe.lk?subject=Job Application&body=Dear Hiring Team,%0D%0A%0D%0APlease find my application for the position.%0D%0A%0D%0ARegards,%0D%0A[Your Name]" 
+   class="apply-now-button">
+   Apply Now
+</a>
                     <v-spacer></v-spacer>
                     <v-btn :icon="card.show ? 'mdi-chevron-up' : 'mdi-chevron-down'" @click="toggleCard(index)"></v-btn>
                 </v-card-actions>
@@ -31,47 +34,11 @@
         </v-col>
     </v-row>
 </v-container>
-<div class="text-center">
-    <v-dialog v-model="dialog" max-width="600">
-        <v-card prepend-icon="mdi-account" title="Careers Form">
-            <v-card-text>
-                <v-row dense>
-                    <v-col cols="12" md="6">
-                        <v-text-field label="Your Full Name" required variant="outlined"></v-text-field>
-                    </v-col>
-                    <v-col cols="12" md="6">
-                        <v-text-field label="Contact Number" variant="outlined"></v-text-field>
-                    </v-col>
-                    <v-col cols="12" md="6">
-                        <v-text-field label="Position" variant="outlined"></v-text-field>
-                    </v-col>
-                    <v-col cols="12" md="6">
-                        <v-text-field label="Email" type="email" variant="outlined"></v-text-field>
-                    </v-col>
-                    <v-col cols="12">
-                        <v-textarea label="Type your message" required variant="outlined"></v-textarea>
-                    </v-col>
-                    <v-col cols="12">
-                        <v-file-input accept="image/*" label="Upload Your CV" variant="outlined"></v-file-input>
-                    </v-col>
-                </v-row>
-                <small class="text-caption text-medium-emphasis">
-                    *indicates required field
-                </small>
-            </v-card-text>
-            <v-divider></v-divider>
-            <v-card-actions>
-                <v-spacer></v-spacer>
-                <v-btn text="Close" color="red" variant="plain" prepend-icon="mdi-close-circle" @click="dialog = false"></v-btn>
-                <v-btn color="primary" text="Submit" variant="tonal" prepend-icon="mdi-check-circle"></v-btn>
-            </v-card-actions>
-        </v-card>
-    </v-dialog>
-</div>
 <ChatBot></ChatBot>
 <FooterPage></FooterPage>
 </template>
 
+  
 <script>
 import NavBar from './NavBar.vue';
 import FooterPage from './FooterPage.vue';
@@ -86,51 +53,40 @@ export default {
             successDialog: false,
             cards: [{
                     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsu5_VDfFM9wtCWkU_FY4xbusUYZC92J-6mw&s",
-                    title: "HR Excecative (Female)",
+                    title: "HR Executive (Female)",
                     subtitle: "Qualifications",
                     content: "Explore the best road trips across the western United States. Unmatched scenic beauty awaits!",
                     show: false,
                 },
                 {
                     image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk-DDipvxubwmxaKbupkDyRguolzQhn1jNpw&s",
-                    title: "IT Excecative",
+                    title: "IT Executive",
                     subtitle: "Qualifications",
                     content: "Discover the serene beauty of desert landscapes with our guided tours and expert advice.",
                     show: false,
                 },
                 {
                     image: "https://e2e2u7e4v6q.exactdn.com/wp-content/uploads/2023/02/pexels-fauxels-3184328.jpg?strip=all&lossy=1&fit=427%2C427&ssl=1",
-                    title: "Assistant Lecture",
+                    title: "Assistant Lecturer",
                     subtitle: "Qualifications",
                     content: "Adventure in the heart of towering peaks. Perfect for hikers, climbers, and nature lovers.",
                     show: false,
                 },
             ],
-
         };
     },
     components: {
         NavBar,
         FooterPage,
-        ChatBot
+        ChatBot,
     },
     mounted() {
         AOS.init(); // Initialize AOS when the component is mounted
     },
-    methods: {
-        toggleCard(index) {
-            this.cards[index].show = !this.cards[index].show;
-        },
-        exploreCard(card) {
-            alert(`Exploring: ${card.title}`);
-        },
-        openDialog() {
-            this.dialog = true; // Ensure dialog opens
-        },
-    },
 };
 </script>
 
+  
 <style scoped>
 .title {
     text-align: center;
