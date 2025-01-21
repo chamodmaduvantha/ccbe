@@ -27,23 +27,23 @@ export default {
         loadData() {
             this.items = [{
                     src: require("../assets/carosel/2.jpg"),
-                    title: "Explore Beautiful Destinations",
-                    subtitle: "Discover the world's best places with us.",
+                    title: "Centric Classroom Environment",
+                    subtitle: "Empowering Active Participation and Engagement.",
                 },
                 {
                     src: require("../assets/carosel/3.jpg"),
-                    title: "Adventure Awaits",
-                    subtitle: "Take the leap into unforgettable experiences.",
+                    title: "Individual Attention with Safeguarding Environment",
+                    subtitle: "Personalized Support in a Safe Space.",
                 },
                 {
                     src: require("../assets/carosel/6.jpg"),
-                    title: "Unparalleled Luxury",
-                    subtitle: "Experience the height of comfort and elegance.",
+                    title: "Personalized Support in a Safe Space",
+                    subtitle: "Empowering Confidence and Leadership.",
                 },
                 {
                     src: require("../assets/carosel/7.jpg"),
-                    title: "Unparalleled Luxury",
-                    subtitle: "Experience the height of comfort and elegance.",
+                    title: "Innovative Learning Experiences",
+                    subtitle: "Blending Technology and Teaching for Growth.",
                 },
             ];
             console.log("Parallax carousel images loaded:", this.items);
