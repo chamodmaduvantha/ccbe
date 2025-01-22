@@ -25,7 +25,13 @@ export default {
     },
     methods: {
         loadData() {
-            this.items = [{
+            this.items = [
+                {
+                    src: require("../assets/carosel/1.jpg"),
+                    title: "Our Recognition",
+                    subtitle: "Celebrating Excellence Across the Years.",
+                },
+                {
                     src: require("../assets/carosel/2.jpg"),
                     title: "Centric Classroom Environment",
                     subtitle: "Empowering Active Participation and Engagement.",
