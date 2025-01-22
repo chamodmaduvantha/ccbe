@@ -3,6 +3,7 @@
     <button @click="prevSlide" class="nav left">‹</button>
     <div class="testimonials-grid">
         <!-- Loop through all testimonials and show only the ones for the current slide -->
+
         <div v-for="(testimonial, index) in testimonials" :key="index" class="testimonial-card" v-show="index >= currentSlide && index < currentSlide + testimonialsPerPage">
             <img :src="testimonial.userAvatar" alt="User Avatar" class="testimonial-avatar" />
             <div class="testimonial-content">
@@ -25,7 +26,7 @@
         <v-row>
             <v-col v-for="(video, index) in videos" :key="index" cols="12" md="6" lg="4">
                 <div class="video-frame">
-                    <iframe :src="video.link" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="350" height="250"></iframe>
+                    <iframe :src="video.link" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="300" height="250" ></iframe>
                 </div>
             </v-col>
         </v-row>
@@ -223,5 +224,12 @@ export default {
     .testimonial-card {
         padding: 1rem;
     }
+}
+.video-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;  /* Center the video frame horizontally */
+  max-width: 100%;
 }
 </style>
