@@ -6,7 +6,7 @@
 <v-container>
     <!-- Logo Section -->
     <div class="logo-container mt-2" data-aos="zoom-in-up" data-aos-duration="3000">
-        <img :src="logo" alt="Company Logo" width="170" height="170" id="logo" />
+        <img :src="logo" alt="Company Logo" width="210" height="170" id="logo" />
     </div>
     <h1 class="title mt-5" data-aos="fade-up" data-aos-duration="3000">
         Welcome to <span class="highlight">Cambridge College of British English</span>
@@ -25,11 +25,10 @@
     <p class="paragraph" data-aos="fade-up" data-aos-duration="3000" style="text-align: center;">
         <b>Join CCBE and unlock your potential for academic success!</b>
     </p>
-    <br />
 
     <v-divider></v-divider>
     <section class="why-choose-us" ref="statsSection" style="background-color: white; padding: 50px 0;">
-        <h1 class="title mt-5 text-center" style="color: #FBB700; font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000">OUR <span class="highlight">STRENGTH</span></h1>
+        <h1 class="title mt-2 text-center" style="color: #FBB700; font-family: 'Roboto', sans-serif; font-size: 36px; font-weight: bold;" data-aos="fade-up" data-aos-duration="2000">OUR <span class="highlight">STRENGTH</span></h1>
 
         <v-container>
             <v-row justify="center" align="center" class="stats-row" spacing="4">

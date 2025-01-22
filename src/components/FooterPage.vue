@@ -15,7 +15,7 @@
             <div class="logof-container">
                 <v-row justify="center" align="center" class="px-4">
                     <v-col cols="12" sm="6" md="3" lg="2" class="text-center">
-                        <img class="responsive-logo" :src="logo" alt="Logo" />
+                        <img class="responsive-logo" :src="logo" alt="Logo" width="180" height="120"/>
                     </v-col>
                     <v-col cols="12" sm="6" md="3" lg="2" class="text-center">
                         <img class="responsive-logo" :src="lable1" alt="Label 1" />

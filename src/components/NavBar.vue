@@ -5,7 +5,7 @@
         <div class="d-flex align-items-center" id="navLogo">
             <h1 class="text-white mt-2" style="font-family: Arial, sans-serif; font-weight: bold; color: #FF5F15 !important;" >CCBE</h1>
             <a class="navbar-brand" href="#">
-                <img :src="logoPath" alt="Company Logo" width="100" height="100" class="d-inline-block align-top ml-3">
+                <img :src="logoPath" alt="Company Logo" width="130" height="100" class="d-inline-block align-top ml-3">
             </a>
         </div>
 

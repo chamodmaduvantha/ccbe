@@ -15,7 +15,7 @@
       return {
         message:
           "THE GOLD PARTNER FOR THE BRITISH COUNCIL & THE LARGEST CAMBRIDGE ENGLISH QUALIFICATIONS PREPARATION NETWORK IN SRI LANKA.",
-        animationSpeed: 15, // Adjust this to control the speed (in seconds)
+        animationSpeed: 25, // Adjust this to control the speed (in seconds)
       };
     },
   };
