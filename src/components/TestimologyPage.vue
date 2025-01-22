@@ -9,7 +9,7 @@
                         <v-icon size="x-large">mdi-youtube</v-icon>
                     </template>
 
-                    <v-card-text class="text-h5 py-2">
+                    <v-card-text class="text-h7 py-2">
                         "{{ tweet.text }}"
                     </v-card-text>
 
