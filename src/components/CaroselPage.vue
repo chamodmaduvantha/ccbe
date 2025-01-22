@@ -27,7 +27,7 @@ export default {
         loadData() {
             this.items = [
                 {
-                    src: require("../assets/carosel/1.jpg"),
+                    src: require("../assets/carosel/2.jpg"),
                     title: "Our Recognition",
                     subtitle: "Celebrating Excellence Across the Years.",
                 },
