@@ -1,44 +1,31 @@
 <template>
-<div class="card-container">
-    <v-container>
-        <v-row>
-            <v-col v-for="(tweet, index) in tweets" :key="index" cols="12" md="6" lg="4">
-                <v-card class="mx-auto" color="yellow-darken-3" max-width="400" height="auto" title="YouTube">
-
-                    <template v-slot:prepend>
-                        <v-icon size="x-large">mdi-youtube</v-icon>
-                    </template>
-
-                    <v-card-text class="text-h7 py-2">
-                        "{{ tweet.text }}"
-                    </v-card-text>
-
-                    <v-card-actions>
-                        <v-list-item class="w-100">
-                            <template v-slot:prepend>
-                                <v-avatar color="amber-accent-4" :image="tweet.userAvatar"></v-avatar>
-                            </template>
-
-                            <v-list-item-title>{{ tweet.userName }}</v-list-item-title>
-                            <v-list-item-subtitle>{{ tweet.userRole }}</v-list-item-subtitle>
-                            <a :href="tweet.link" target="_blank" rel="noopener noreferrer">
-                                <v-icon>mdi-link</v-icon>
-                            </a>
-                            <template v-slot:append>
-                            </template>
-                        </v-list-item>
-                    </v-card-actions>
-                </v-card>
-            </v-col>
-        </v-row>
-    </v-container>
+<div class="testimonials-container">
+    <button @click="prevSlide" class="nav left">‹</button>
+    <div class="testimonials-grid">
+        <!-- Loop through all testimonials and show only the ones for the current slide -->
+        <div v-for="(testimonial, index) in testimonials" :key="index" class="testimonial-card" v-show="index >= currentSlide && index < currentSlide + testimonialsPerPage">
+            <img :src="testimonial.userAvatar" alt="User Avatar" class="testimonial-avatar" />
+            <div class="testimonial-content">
+                <p class="testimonial-text">{{ testimonial.text }}</p>
+                <div class="testimonial-user-info">
+                    <h4>{{ testimonial.userName }}</h4>
+                    <span>{{ testimonial.userRole }}</span>
+                </div>
+                <a :href="testimonial.link" target="_blank" rel="noopener noreferrer" class="testimonial-link">
+                    Watch Video <v-icon>mdi-link</v-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+    <button @click="nextSlide" class="nav right">›</button>
 </div>
+
 <div class="video-container">
     <v-container>
         <v-row>
             <v-col v-for="(video, index) in videos" :key="index" cols="12" md="6" lg="4">
                 <div class="video-frame">
-                    <iframe :src="video.link" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe :src="video.link" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="350" height="250"></iframe>
                 </div>
             </v-col>
         </v-row>
@@ -50,7 +37,9 @@
 export default {
     data() {
         return {
-            tweets: [{
+            currentSlide: 0, // Start at the first slide
+            testimonialsPerPage: 3, // Number of testimonials per slide
+            testimonials: [{
                     text: "English became equal to my mother tongue apart from syllabus they taught so many things about life. They preapared me with an armor of English",
                     userName: "Thilina Chamod",
                     userRole: "Key Intake",
@@ -129,29 +118,110 @@ export default {
             ],
         };
     },
+    methods: {
+        nextSlide() {
+            if (this.currentSlide < this.testimonials.length - this.testimonialsPerPage) {
+                this.currentSlide++;
+            } else {
+                this.currentSlide = 0; // Loop back to the first slide
+            }
+        },
+        prevSlide() {
+            if (this.currentSlide > 0) {
+                this.currentSlide--;
+            } else {
+                this.currentSlide = this.testimonials.length - this.testimonialsPerPage; // Go to the last slide
+            }
+        },
+    },
 };
 </script>
 
 <style scoped>
-.card-container {
+.testimonials-container {
     margin: 2rem auto;
-}
-.video-container {
-  margin: 2rem auto;
-}
-
-.video-frame {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  height: 0;
-  overflow: hidden;
+    max-width: 1200px;
+    padding: 0 1rem;
+    position: relative;
 }
 
-.video-frame iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.testimonial-card {
+    background: #ffbd08;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.testimonial-content {
+    padding: 0.5rem;
+}
+
+.testimonial-text {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
+
+.testimonial-user-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-user-info span {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.testimonial-link {
+    color: #007bff;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.testimonial-link v-icon {
+    margin-left: 0.5rem;
+}
+
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.nav.left {
+    left: 1rem;
+}
+
+.nav.right {
+    right: 1rem;
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 1rem;
+    }
 }
 </style>
